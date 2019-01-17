@@ -1,3 +1,4 @@
+import { MyQuestionsComponent } from './my-questions/my-questions.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {QuestionOneComponent} from './question-one/question-one.component';
@@ -9,32 +10,36 @@ import {QuestionSixComponent} from './question-six/question-six.component';
 
 const routes: Routes = [
   {
-    path: 'q1',
+    path: 'questions',
+    component: MyQuestionsComponent
+  },
+  {
+    path: 'question-1',
     component: QuestionOneComponent,
   },
   {
-    path: 'q2',
+    path: 'question-2',
     component: QuestionTwoComponent,
   },
   {
-    path: 'q3',
+    path: 'question-3',
     component: QuestionThreeComponent,
   },
   {
-    path: 'q4',
+    path: 'question-4',
     component: QuestionFourComponent,
   },
   {
-    path: 'q5',
+    path: 'question-5',
     component: QuestionFiveComponent,
   },
   {
-    path: 'q6',
+    path: 'question-6',
     component: QuestionSixComponent,
   },
   {
     path: '**',
-    redirectTo: 'q1',
+    redirectTo: 'questions',
   },
 ];
 
