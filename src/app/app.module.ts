@@ -10,6 +10,8 @@ import { QuestionThreeComponent } from './question-three/question-three.componen
 import { QuestionFourComponent } from './question-four/question-four.component';
 import { QuestionFiveComponent } from './question-five/question-five.component';
 import { QuestionSixComponent } from './question-six/question-six.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { QuestionSevenComponent } from './question-seven/question-seven.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { QuestionSixComponent } from './question-six/question-six.component';
     QuestionThreeComponent,
     QuestionFourComponent,
     QuestionFiveComponent,
-    QuestionSixComponent
+    QuestionSixComponent,
+    QuestionSevenComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
