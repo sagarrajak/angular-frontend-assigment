@@ -7,8 +7,12 @@ import { QuestionSevenComponent } from './question-seven/question-seven.componen
 import { QuestionSixComponent } from './question-six/question-six.component';
 import { QuestionThreeComponent } from './question-three/question-three.component';
 import { QuestionTwoComponent } from './question-two/question-two.component';
+import { MyQuestionsComponent } from './my-questions/my-questions.component';
 
-const routes: Routes = [
+const routes: Routes = [{
+    path: 'question',
+    component: MyQuestionsComponent
+  },
   {
     path: 'question-1',
     component: QuestionOneComponent,
@@ -39,7 +43,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'question-1',
+    redirectTo: 'question',
   },
 ];
 
