@@ -1,15 +1,54 @@
-#colorchilderen {
-    // overider this for second problem 
+//using css regex $= matches for end of string
+a[href$=".com"] {
+  color: red;
 }
 
-#bluecolor {
-    // for second problem
+// second problem
+
+#colorchilderen div div div {
+  color: red;
+}
+#colorchilderen div {
+  color: green;
+}
+#colorchilderen div div div div {
+  color: yellow;
 }
 
-#evenodd {
-    // for third problem 
+#bluecolor ul li:nth-child(2) {
+  color: blue;
 }
 
-#lastselector {
-    // for fourth problem 
+//  third problem
+#evenodd li:nth-child(2n) {
+  color: red;
+}
+#evenodd li:nth-child(2n+1) {
+  color: green;
+}
+
+// for fourth problem
+//trial&error
+#lastselector ul li:last-child {
+  color: red;
+}
+#lastselector ul li ul li:last-child {
+  color: red;
+}
+#lastselector ul li ul li ul li:last-child {
+  color: red;
+}
+#lastselector ul li ul li ul li ul li:last-child {
+  color: red;
+}
+  
+/* mouse over link */
+a:hover {
+  color: red;
+  cursor: progress;
+}
+a { color: inherit; 
+} 
+a:active {
+  color: blue;
 }
