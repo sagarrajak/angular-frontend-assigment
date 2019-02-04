@@ -1,10 +1,42 @@
 #main {
-    width: 300px;
-    height: 300px;
-    background-color:red;
-    position: absolute;
-    color: white;
-
-    //overide here 
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  color: white;
 }
-
+//Adjusting font-size
+#main div {
+  width: 30px;
+  height: 30px;
+  font-size: 0.6em;
+  color: black;
+}
+//Bottom-Left
+#main div:nth-child(1) {
+  background-color: green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+//Bottom_right
+#main div:nth-child(2) {
+  background-color: yellow;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+//Top_right
+#main div:nth-child(3) {
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+//top_left
+#main div:nth-child(4) {
+  background-color: pink;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

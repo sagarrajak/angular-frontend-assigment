@@ -1,0 +1,58 @@
+$color_1: grey;
+$color_2: orange;
+$color_3: blue;
+$color_4: red;
+$color_5: purple;
+$color_6: yellow;
+$color_7: green;
+
+@media screen and (min-width: 901px) and (max-width: px) {
+	.task {
+		color: $color_1;
+	}
+}
+@media screen and (min-width: 801px) and (max-width: 900px) {
+	.task {
+		color: $color_2;
+	}
+}
+@media screen and (min-width: 701px) and (max-width: 800px) {
+	.task {
+		color: $color_3;
+	}
+}
+@media screen and (min-width: 601px) and (max-width: 700px) {
+	.task {
+		color: $color_4;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 600px) {
+	.task {
+		color: $color_5;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 500px) {
+	.task {
+		color: $color_2;
+	}
+}
+@media screen and (min-width: 301px) and (max-width: 400px) {
+	.task {
+		color: $color_6;
+	}
+}
+@media screen and (min-width: 201px) and (max-width: 300px) {
+	.task {
+		color: $color_7;
+	}
+}
+@media screen and (min-width: 101px) and (max-width: 200px) {
+	.task {
+		color: $color_3;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 100px) {
+	.task {
+		color: $color_4;
+	}
+}
