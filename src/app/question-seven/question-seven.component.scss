@@ -1,15 +1,49 @@
+a[href$=".com"] {
+    color: red;
+}
 #colorchilderen {
-    // overider this for second problem 
+    div:nth-child(1){
+        div:nth-child(1) div{
+            color: red;
+        }
+        div:nth-child(2) div{
+            color: yellow;
+        }
+    }
+    div{
+        color: green;
+    }
 }
 
-#bluecolor {
-    // for second problem
+#bluecolor  ul li:nth-child(2) {
+        color: blue;
 }
 
-#evenodd {
-    // for third problem 
+#evenodd li:nth-child(2n) {
+    color: red;
+}
+#evenodd li:nth-child(2n+1) {
+    color: green;
 }
 
-#lastselector {
-    // for fourth problem 
+#lastselector ul li:last-child {
+    color: red;
+  }
+  #lastselector ul li ul li:last-child {
+    color: red;
+  }
+  #lastselector ul li ul li ul li:last-child {
+    color: red;
+  }
+  #lastselector ul li ul li ul li ul li:last-child {
+    color: red;
+  }
+a{
+    text-decoration: none;
+        &:hover {
+            color: red;
+        }
+        &:active {
+            color: blue;
+        }
 }
