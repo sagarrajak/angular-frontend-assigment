@@ -1,0 +1,52 @@
+.part1{
+     p:first-child { 
+          color: red;
+     }
+     div>p{
+          color: green;
+     }
+     span{
+          color: blue;
+     }
+     p:last-child { 
+          color: yellow;
+     }
+}
+.part2{
+     li{
+          color: red;
+     }
+     li:nth-of-type(3n) {
+          color: green;
+        }
+}
+.part3{
+     div{
+          color:blue;
+     }
+     
+     span:nth-of-type(odd) + div{
+          color: red;
+     }
+}
+.part4{
+     a{
+          color: red;
+     }
+     
+     div:nth-child(2)>a{
+          color:yellow;
+     }
+     li:nth-child(1) a{
+          color:yellow
+     }
+     li:nth-child(2) a{
+          color:green
+     }
+     li:nth-child(3) a{
+          color:red
+     }
+     p a{
+          color: yellow;
+     }
+}
