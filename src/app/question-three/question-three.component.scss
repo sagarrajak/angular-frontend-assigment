@@ -1,0 +1,86 @@
+$bgc_1: red;
+$bgc_2: green;
+$bgc_3: indigo;
+.section1{
+     background-color: blue;
+     width:1000px;
+     height: 1000px;
+     margin-bottom: 2%;
+     div{
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          div{
+               background-color: aliceblue;
+               width: 100px;
+               height: 100px;
+               margin: 100px;
+               &:nth-child(1) {
+                    background-color: $bgc_1;
+               }
+               &:nth-child(2) {
+                    background-color: $bgc_2;
+               }
+               &:nth-child(3) {
+                    background-color: $bgc_3;
+               }
+          }
+     }
+}
+.arrange2{
+     background-color: blue;
+     width:1000px;
+     height: 1000px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-top: 200px;
+
+     div:nth-child(-n+3){
+          background-color: aliceblue;
+          width: 100px;
+          height: 100px;
+          margin: 100px;
+          &:nth-child(1) {
+               background-color: $bgc_1;
+          }
+          &:nth-child(2) {
+               background-color: $bgc_2;
+          }
+          &:nth-child(3) {
+               background-color: $bgc_3;
+          }
+          
+     }
+     div:nth-child(-n+6){
+          background-color: aliceblue;
+          width: 100px;
+          height: 100px;
+          margin: 20px 110px;
+          &:nth-child(4) {
+               background-color: $bgc_1;
+          }
+          &:nth-child(5) {
+               background-color: $bgc_2;
+          }
+          &:nth-child(6) {
+               background-color: $bgc_3;
+          }
+     }
+     div:nth-child(-n+9){
+          background-color: aliceblue;
+          width: 100px;
+          height: 100px;
+          margin: 20px 110px;
+          
+          &:nth-child(7) {
+               background-color: $bgc_1;
+          }
+          &:nth-child(8) {
+               background-color: $bgc_2;
+          }
+          &:nth-child(9) {
+               background-color: $bgc_3;
+          }
+     }
+}
