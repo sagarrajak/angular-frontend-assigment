@@ -1,0 +1,52 @@
+.color-index{
+     @media only screen and (max-width: 100px) {
+          li:nth-child(1){
+               color: red;
+          }
+     }
+     @media only screen and (min-width:101px) and (max-width:200px) {
+          li:nth-child(2){
+               color: blue;
+          }
+     }
+     @media only screen and (min-width:201px) and (max-width:300px) {
+          li:nth-child(3){
+               color: green;
+          }
+     }
+     @media only screen and (min-width:301px) and (max-width: 400px) {
+          li:nth-child(4){
+               color: yellow;
+          }
+     }
+     @media only screen and (min-width:401px) and (max-width: 500px) {
+          li:nth-child(5){
+               color: orange;
+          }
+     }
+     @media only screen and (min-width:501px) and (max-width: 600px) {
+          li:nth-child(6){
+               color: purple;
+          }
+     }
+     @media only screen and (min-width:601px) and (max-width: 700px) {
+          li:nth-child(7){
+               color: red;
+          }
+     }
+     @media only screen and (min-width:701px) and (max-width: 800px) {
+          li:nth-child(8){
+               color: blue;
+          }
+     }
+     @media only screen and (min-width:801px) and (max-width: 900px) {
+          li:nth-child(9){
+               color: orange;
+          }
+     }
+     @media only screen and (min-width:901px) {
+          li:nth-child(10){
+               color: gray;
+          }
+     }
+}
