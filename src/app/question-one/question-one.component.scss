@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+form {
+  border: solid 5px rgb(45, 33, 206);
+  border-style: dashed;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Montserrat";
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(232, 246, 255);
+}
+
+h1 {
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+.depthButton {
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.depthButton:hover {
+  color: #5778f3;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+input:valid {
+  border-bottom: solid rgb(57, 116, 77);
+}
+
+input:invalid {
+  border-bottom: solid rgb(255, 69, 69);
+}
+
+p {
+  float: right;
+  top: 10px;
+  visibility: hidden;
+}
