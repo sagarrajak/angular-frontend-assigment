@@ -18,11 +18,7 @@
 <form [formGroup]="userForm" (ngSubmit)="callAfterSubmit(testForm)">
   <h1>simple user details form</h1>
   <br />
-  <p *ngIf="userForm.controls['firstName'].errors.required">
-    Field is required
-  </p>
   <label>First name(required)</label>
-
   <input
     type="text"
     placeholder="First name"
@@ -37,6 +33,9 @@
       userForm.controls['firstName'].invalid
     "
   >
+    <p *ngIf="userForm.controls['firstName'].errors.required">
+      Field is required
+    </p>
   </ng-container>
   <br />
   <label>Middle name(required)</label>

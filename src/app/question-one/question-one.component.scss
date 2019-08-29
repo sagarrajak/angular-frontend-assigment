@@ -53,8 +53,8 @@ input {
   background: #fff;
   border-radius: 4px;
   width: 100%;
-  margin-bottom: 20px;
   transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 input:hover {
@@ -73,7 +73,7 @@ input:invalid {
 }
 
 p {
-  float: right;
-  top: 10px;
-  visibility: hidden;
+  display: inline;
+  color: rgb(255, 69, 69);
+  margin-bottom: 20px;
 }
