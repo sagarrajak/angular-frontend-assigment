@@ -1,3 +1,30 @@
-.t{
+.t {
   background: red;
+}
+
+.t1 {
+  visibility: hidden;
+}
+
+.t2 {
+  background-color: white;
+  color: white;
+}
+
+.t3 {
+  opacity: 0;
+}
+
+.t4 {
+  display: none;
+}
+
+.t5 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.t6 {
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
 }
