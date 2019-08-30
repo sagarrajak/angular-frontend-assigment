@@ -1,0 +1,93 @@
+.part1 > span {
+  color: blue;
+}
+
+.part1 > p {
+  color: red;
+}
+.part1 > div > p {
+  color: green;
+}
+
+.part1 > div > span {
+  color: blue;
+}
+
+.part1 > div ~ p {
+  color: yellow;
+}
+
+.part2 > ol > li {
+  color: red;
+}
+
+.part2 > ol > li ~ li ~ li {
+  color: green;
+}
+
+.part2 > ol > li ~ li ~ li ~ li {
+  color: red;
+}
+
+.part2 > ol > li ~ li ~ li ~ li ~ li ~ li {
+  color: green;
+}
+
+.part2 > ol > li ~ li ~ li ~ li ~ li ~ li ~ li {
+  color: red;
+}
+
+.part2 > ol > li ~ li ~ li ~ li ~ li ~ li ~ li ~ li ~ li {
+  color: green;
+}
+
+.part2 > ol > li ~ li ~ li ~ li ~ li ~ li ~ li ~ li ~ li ~ li {
+  color: red;
+}
+
+.part3 {
+  color: blue;
+}
+
+span {
+  color: black;
+}
+
+span ~ div {
+  color: red;
+}
+
+span ~ div ~ div {
+  color: blue;
+}
+.part3 > div:last-child {
+  color: red;
+}
+
+.part4 > div > a {
+  color: red;
+}
+
+.part4 > div ~ div > a {
+  color: yellow;
+}
+
+.part4 > ul > li > a {
+  color: yellow;
+}
+
+.part4 > ul > li ~ li > a {
+  color: green;
+}
+
+.part4 > ul > li ~ li ~ li > a {
+  color: red;
+}
+
+.part4 > ul ~ p > a {
+  color: yellow;
+}
+
+.part4 > a:last-child {
+  color: red;
+}
