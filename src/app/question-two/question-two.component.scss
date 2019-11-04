@@ -1,0 +1,42 @@
+.part1 p{
+    color: red;
+}
+
+.part1 span{
+    color: blue;
+}
+
+.part1>div p{
+    color:green;
+}
+
+.part1>div + p{
+    color:yellow;
+}
+.part2>ol>li:nth-child(3n+3){
+    color:green;
+} 
+.part2>ol>li{
+    color:red;
+}
+
+.part3 div{
+    color:blue;
+}
+
+.iAffectMyNextdiv + div{
+    color:red;
+}
+
+a[href="https://www.google.com"]{
+    color:red;
+}
+
+a[target="_blank"]
+{
+    color: yellow;
+}
+
+.part4 li{
+    color:green;
+}
