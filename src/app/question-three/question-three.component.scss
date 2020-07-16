@@ -1,0 +1,113 @@
+/*Arrange - 1*/
+.arrange1{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid blue;
+    position: relative;
+    text-align: center;
+}
+
+/*Inside 1st big box*/
+/*Common Styles*/
+.arrange1 > div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: absolute;
+}
+
+.arrange1 ~ div > div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: absolute;
+}
+
+/*Individual styles*/
+.arrange1 > div:nth-child(2){
+    top: 0;
+    margin:0 0 0 450px;
+}
+
+.arrange1 > div:nth-child(3){
+    top: 0;
+    right: 0;
+}
+
+//div outside class - arrange1
+.arrange1 ~ div{
+    position: relative;
+    top: -100px;
+
+    div:nth-child(2){
+        margin: 0 0 0 450px;
+    }
+
+    div:nth-child(3){
+        margin: 0 0 0 900px;
+    }
+
+}
+
+//Middle div height adjustment
+.arrange1 + div{
+    top: -650px;
+}
+
+/*Arrange - 2*/
+
+.arrange2{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid blue;
+    position: relative;
+    text-align: center;
+}
+
+/*Inside 2nd big box*/
+/*Common Styles*/
+.arrange2 > div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    position: absolute;
+}
+
+/*Individual styles*/
+
+.arrange2 > div:nth-child(2){
+    top: 0;
+    margin:0 0 0 450px;
+}
+
+.arrange2 > div:nth-child(3){
+    top: 0;
+    right: 0;
+}
+.arrange2 > div:nth-child(4){
+    top: 450px;
+    left: 0;
+}
+
+.arrange2 > div:nth-child(5){
+    top: 450px;
+    margin:0 0 0 450px;
+}
+.arrange2 > div:nth-child(6){
+    top: 450px;
+    right:0;
+}
+
+.arrange2 > div:nth-child(7){
+    bottom: 0;
+    left: 0;
+}
+.arrange2 > div:nth-child(8){
+    bottom: 0;
+    margin:0 0 0 450px;
+}
+
+.arrange2 > div:nth-child(9){
+    bottom: 0;
+    right: 0;
+}

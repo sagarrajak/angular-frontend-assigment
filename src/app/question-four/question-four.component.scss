@@ -1,3 +1,35 @@
 .t{
   background: red;
 }
+
+.t1{
+  display: none;
+}
+
+.t2{
+  visibility: hidden;
+}
+
+.t3{
+  opacity: 0;
+}
+
+.t4{
+  color: transparent;
+  background-color: transparent;
+}
+
+.t5{
+  height: 0px;
+  overflow: hidden;
+}
+
+.t6{
+  width: 0px;
+  overflow: hidden;
+}
+
+.t7{
+  position: absolute;
+  top: -9999px;
+}

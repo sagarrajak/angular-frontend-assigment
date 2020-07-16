@@ -6,5 +6,36 @@
     color: white;
 
     //overide here 
+    color: black;
+    font-size: 10px;//Approximate size based on 2nd child
+    overflow: hidden;
 }
 
+//Common for all divs
+div > div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+//Individual child
+div > div:nth-child(1){
+    background-color: green;
+    bottom: 0;
+}
+
+div > div:nth-child(2){
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}
+
+div > div:nth-child(3){
+    background-color: blue;
+    right: 0;
+}
+
+div > div:nth-child(4){
+    background-color: pink;
+    text-transform: lowercase;
+}

@@ -1,15 +1,64 @@
+//For 1st one
+a[href$=com]{
+    color: red;
+}
+
+//For 2nd one
 #colorchilderen {
     // overider this for second problem 
+    div {
+        color: green;
+    }
+
+    div div {
+        color: red;
+    }
+
+    div div div div{
+        color: yellow;
+    }
 }
 
+//For 3rd one
 #bluecolor {
     // for second problem
+    ul li:nth-child(2){
+        color: blue;
+    }
 }
 
+//For 4th one
 #evenodd {
     // for third problem 
+    li:nth-child(odd){
+        color: green;
+    }
+    li:nth-child(even){
+        color: red;
+    }
 }
 
+//For 5th one
 #lastselector {
     // for fourth problem 
+    ul li:nth-last-child(1){
+        color: red;
+    }
+}
+
+//For 6th one
+
+//used h5 + a cuz using 'a' alone would affect the 1st qn answer!
+
+h5 + a{
+    text-decoration: none;
+}
+
+h5 + a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+h5 + a:active{
+    color: blue;
 }
