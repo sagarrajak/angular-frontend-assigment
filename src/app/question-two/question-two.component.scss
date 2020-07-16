@@ -1,0 +1,65 @@
+/*Part - 1*/
+.part1{
+    color: red;
+}
+.part1 > p:nth-of-type(2){
+    color: yellow;
+}
+
+.part1 > span, .part1 > div > span{
+    color: blue;
+}
+
+.part1 > div > p{
+    color: green;
+}
+
+/*Part - 2*/
+.part2 > ol{
+    color: red;
+}
+
+.part2 > ol > li:nth-child(3n){
+    color: green;
+}
+
+/*Part - 3*/
+.part3 > div{
+    color: blue;
+}
+
+.part3 > span:not(.iAffectMyNextdiv){
+    color: green; //I thought safe should be green!
+}
+
+.iAffectMyNextdiv, .iAffectMyNextdiv + div{
+    color: red;
+}
+
+/*Part - 4*/
+a[href$=com]{
+    color: red;
+}
+
+a[target="_blank"]{
+    color: yellow;
+}
+
+.part4 > ul > li:nth-child(2) > a{
+    color: green;
+}
+/*
+I think this would be more efficient as all the yellow colors are overriding red colors in the above code!
+This will be more specific!
+.part4 > div > a{
+    color: inherit;
+}
+.part4, .part4 > a, .part4 > ul > li:nth-child(3) > a{
+    color: red;
+}
+.part4 > div:nth-child(2), .part4 > p > a, .part4 > ul > li:nth-child(1) > a{
+    color: yellow;
+}
+.part4 > ul > li:nth-child(2) > a{
+    color: green;
+}*/

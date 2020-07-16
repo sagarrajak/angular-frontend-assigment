@@ -32,7 +32,7 @@
     </ng-container>
     <br/>
     <label>Age(required)</label>
-    <input type="text"  placeholder='age' name='age' formControlName='ageField' />
+    <input type="number"  placeholder='Age' name='age' formControlName='ageField' />
     <ng-container *ngIf="(userForm.controls['ageField'].touched || userForm.controls['ageField'].dirty) && userForm.controls['ageField'].invalid">
         <p *ngIf="userForm.controls['ageField'].errors.required">Field is required</p>
         <p *ngIf="userForm.controls['ageField'].errors.min">Minimum age is 18</p>
@@ -47,10 +47,10 @@
     </ng-container>
     <br>
     <label>Address2</label>
-    <input type="text"  placeholder="Adress2" name='address2' />
+    <input type="text"  placeholder="Adress2" name='address2' formControlName='address2' />
     <br/>
     <label>Address3</label>
-    <input type="text"  placeholder="Adress3" name='address3'  />
+    <input type="text"  placeholder="Adress3" name='address3' formControlName='address3' />
     <br/>
-    <button type="submit">submit</button>
+    <button class="btn btn-outline-success" type="submit">submit</button>
 </form>
