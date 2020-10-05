@@ -1,0 +1,75 @@
+.arrange2{
+	width: 1000;
+	height: 1000;
+	background: blue;
+	position: relative;
+
+}
+
+.arrange2> div{
+	width: 100;
+	height: 100;
+}
+
+.arrange2 > div:nth-child(1){
+	position: absolute;
+	background: #Ca8554;
+	top: 0;
+	left: 0;
+}
+
+.arrange2 > div:nth-child(2){
+	background: #8a8654;
+	position: absolute;
+	top:0;
+	left: 45%;
+}
+
+.arrange2 > div:nth-child(3){
+	background: #Fa8554;
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+.arrange2 > div:nth-child(4){
+	position: absolute;
+	background: #6a8554;
+	top: 45%;
+	left: 0;
+}
+
+.arrange2 > div:nth-child(5){
+	background: #2a8654;
+	position: absolute;
+	top:45%;
+	left: 45%;
+}
+
+.arrange2 > div:nth-child(6){
+	background: #Ga8554;
+	position: absolute;
+	top: 45%;
+	right:0;
+}
+
+.arrange2 > div:nth-child(7){
+	position: absolute;
+	background: #798554;
+	bottom: 0;
+	left: 0;
+}
+
+.arrange2 > div:nth-child(8){
+	background: #9a8654;
+	position: absolute;
+	bottom:0;
+	left: 45%;
+}
+
+.arrange2 > div:nth-child(9){
+	background: #5a8554;
+	position: absolute;
+	bottom:0;
+	right:0;
+}

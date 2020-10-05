@@ -1,0 +1,59 @@
+.part1 > p:nth-child(1){
+  color: red;
+}
+
+.part1 > span:nth-child(2){
+  color: blue;
+}
+
+.part1 > div > p{
+  color: green;
+}
+
+.part1 > div > span{
+  color: blue;
+}
+
+.part1 > p:nth-child(4){
+  color: yellow;
+}
+
+.part2 > ol > li:nth-child(3n+3){
+	color: green;
+}
+
+.part2 > ol > li:nth-child(3n+1),.part2 > ol > li:nth-child(3n+2),{
+	color: red;
+}
+
+.iAffectMyNextdiv div{
+	color: red;
+}
+
+.part4 > a:nth-child(5){
+	color: red;
+}
+
+.part4 > div:nth-child(1) >a{
+	color: red;
+}
+
+.part4 > div:nth-child(2) >a{
+	color: yellow;
+}
+
+.part4 > ul> li:nth-child(1) >a{
+	color: yellow;
+}
+
+.part4 > ul> li:nth-child(2) >a{
+	color: green;
+}
+
+.part4 > ul> li:nth-child(3) >a{
+	color: red;
+}
+
+.part4 > p:nth-child(4) >a{
+	color: yellow;
+}
