@@ -1,0 +1,54 @@
+//part1
+div.part1 :first-child {
+    color: red;
+}
+
+div.part1 span {
+    color: blue;
+}
+
+div.part1>div>p {
+    color: green;
+}
+
+div.part1 p:last-child {
+    color: yellow;
+}
+
+//part 2
+.part2 li {
+    color: red;
+}
+
+.part2 li:nth-child(3n) {
+    color: green;
+}
+
+//part3
+.part3 div {
+    color: blue;
+}
+
+.part3 .iAffectMyNextdiv {
+    color: rgb(255, 0, 0);
+}
+
+.iAffectMyNextdiv+div {
+    color: rgb(255, 0, 0);
+}
+
+.part4 div> :first-child,
+.part4 a,
+.part4 li:nth-child(3) a {
+    color: red;
+}
+
+.part4 div:nth-child(2) a,
+.part4 p a,
+.part4 li:nth-child(1) a {
+    color: yellow;
+}
+
+.part4 li:nth-child(2) a {
+    color: green;
+}

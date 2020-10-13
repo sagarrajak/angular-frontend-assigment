@@ -1,0 +1,111 @@
+$background_color_1: blue;
+$background_color_2: violet;
+$background_color_3: indigo;
+$background_color_4: brown;
+$background_color_5: green;
+$background_color_6: yellow;
+$background_color_7: orange;
+$background_color_8: red;
+$background_color_9: pink;
+$background_color_10: aqua;
+.arrange1 {
+    margin-bottom: 5px;
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    background-color: $background_color_1;
+    div {
+        margin: 100px;
+        height: 100px;
+        width: 100px;
+        &:nth-child(1) {
+            background-color: $background_color_2;
+        }
+        &:nth-child(2) {
+            background-color: $background_color_5;
+        }
+        &:nth-child(3) {
+            background-color: $background_color_8;
+        }
+    }
+}
+
+.arrange1+div {
+    display: flex;
+    position: absolute;
+    top: 557px;
+    div {
+        margin: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    div:nth-child(1) {
+        background-color: $background_color_3;
+    }
+    div:nth-child(2) {
+        background-color: $background_color_5;
+    }
+    div:nth-child(3) {
+        background-color: $background_color_8;
+    }
+}
+
+.arrange1+div+div {
+    display: flex;
+    position: absolute;
+    top: 947px;
+    div {
+        margin: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    div:nth-child(1) {
+        background-color: $background_color_2;
+    }
+    div:nth-child(2) {
+        background-color: $background_color_5;
+    }
+    div:nth-child(3) {
+        background-color: $background_color_8;
+    }
+}
+
+.arrange2 {
+    height: 1000px;
+    width: 1000px;
+    background-color: $background_color_1;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        margin: 100px;
+        height: 100px;
+        width: 100px;
+        &:nth-child(1) {
+            background-color: $background_color_2;
+        }
+        &:nth-child(2) {
+            background-color: $background_color_3;
+        }
+        &:nth-child(3) {
+            background-color: $background_color_4;
+        }
+        &:nth-child(4) {
+            background-color: $background_color_5;
+        }
+        &:nth-child(5) {
+            background-color: $background_color_6;
+        }
+        &:nth-child(6) {
+            background-color: $background_color_7;
+        }
+        &:nth-child(7) {
+            background-color: $background_color_8;
+        }
+        &:nth-child(8) {
+            background-color: $background_color_9;
+        }
+        &:nth-child(9) {
+            background-color: $background_color_10;
+        }
+    }
+}
