@@ -1,0 +1,50 @@
+.part1::first-line{
+    color:red;
+  }
+  
+  .part1 span{
+    color:blue;
+  }
+  
+  .part1 div, p{
+      color:green;
+  }
+  
+  p:last-child{
+      color: yellow;
+  }
+
+  .part2:nth-child(1), .part2:nth-child(2), .part2:nth-child(4), 
+  .part2:nth-child(5), .part2:nth-child(7), .part2:nth-child(8), .part2:nth-child(10){
+    color:red;
+  }
+  
+  li:nth-child(3), li:nth-child(6), li:nth-child(9){
+    color:green;
+  }
+  
+  .part3:nth-child(1), .part3:nth-child(2), .part3:nth-child(3), 
+  .part3:nth-child(4), .part3:nth-child(5), .part3:nth-child(8),
+  .part3:nth-child(9), .part3:nth-child(11), .part3:nth-child(12){
+    color:blue;
+  }
+  
+  .part3 .iAffectMyNextdiv{
+    color:red;
+  }
+
+  .part3 .iAffectMyNextdiv::after{
+      color: red;
+  }
+
+  span{
+      color: black;
+  }
+ 
+  a{
+    color:red;
+  }
+
+  .part4 :target{
+      color: yellow;
+  }

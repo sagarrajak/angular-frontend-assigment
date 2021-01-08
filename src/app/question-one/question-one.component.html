@@ -12,27 +12,27 @@
 <form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
     <h1>simple user details form</h1>
     <br/>
-    <label>First name(required)</label>
-    <input type="text"  placeholder="First name" name='firstname' formControlName='firstName'/>
+  <label><span style="border: 1px solid red;">First name</span>(required)</label>
+    <input type="text" *ngIf="firstname.value==""" placeholder="First name" name='firstname' formControlName='firstName'/>
     <ng-container *ngIf="(userForm.controls['firstName'].touched || userForm.controls['firstName'].dirty) && userForm.controls['firstName'].invalid">
         <p *ngIf="userForm.controls['firstName'].errors.required">Field is required</p>
     </ng-container>
     <br/>
-    <label>Middle name(required)</label>
-    <input type="text"  placeholder='Middle name' name='middlename' formControlName='lastName'  />
+  <label><span style="border: 1px solid red;">Middle name(required)</span></label>
+    <input type="text" *ngIf="(middlename.value=="")" placeholder='Middle name' name='middlename' formControlName='lastName'  />
     <ng-container *ngIf="(userForm.controls['lastName'].touched || userForm.controls['lastName'].dirty) && userForm.controls['lastName'].invalid">
         <p *ngIf="userForm.controls['lastName'].errors.required">Field is required</p>
     </ng-container>
     <br/>
-    <label>Email (required)</label>
-    <input type="text"  placeholder='Email' name='email' formControlName='emailField'  />
+      <label><span style="border: 1px solid red;">Email (required)</span></label>
+    <input type="text" *ngIf="email.value==""" placeholder='Email' name='email' formControlName='emailField'  />
     <ng-container *ngIf="(userForm.controls['emailField'].touched || userForm.controls['emailField'].dirty) && userForm.controls['emailField'].invalid">
         <p *ngIf="userForm.controls['emailField'].errors.required">Field is required</p>
         <p *ngIf="userForm.controls['emailField'].errors.email">Invalid email address</p>
     </ng-container>
     <br/>
-    <label>Age(required)</label>
-    <input type="text"  placeholder='age' name='age' formControlName='ageField' />
+    <label><span style="border: 1px solid red;">Age(required)</span></label>
+    <input type="text" *ngIf="age.value==""" placeholder='age' name='age' formControlName='ageField' />
     <ng-container *ngIf="(userForm.controls['ageField'].touched || userForm.controls['ageField'].dirty) && userForm.controls['ageField'].invalid">
         <p *ngIf="userForm.controls['ageField'].errors.required">Field is required</p>
         <p *ngIf="userForm.controls['ageField'].errors.min">Minimum age is 18</p>
