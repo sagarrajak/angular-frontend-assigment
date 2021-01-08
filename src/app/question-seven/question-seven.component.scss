@@ -13,3 +13,24 @@
 #lastselector {
     // for fourth problem 
 }
+
+a[href="http://example.com"] {
+    color: red;
+  }
+
+  div > div {
+    color:yellow;
+  }
+
+  #colorchilderen div div div{
+      color: red;
+  }
+
+  #lastselector ul li:last-child{
+     color: red;
+ }
+
+ :hover a:last-child{
+     clear: both;
+    color: red;
+ }
