@@ -15,8 +15,8 @@ a[href$=".com"] {
   color: green;
 }
 
-#bluecolor {
-  // for second problem
+#bluecolor ul li:nth-child(2) {
+  color: blue;
 }
 
 // Section 4 styles
