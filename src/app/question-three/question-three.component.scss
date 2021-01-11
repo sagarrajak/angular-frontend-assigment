@@ -1,0 +1,150 @@
+.section1 {
+  width: 1000px;
+  height: 500px;
+  background-color: blue;
+  position: relative;
+}
+
+// styles for arrange 1
+.section1 .arrange1 > div:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.section1 .arrange1 > div:nth-of-type(2) {
+  transform: translate(-50%);
+  left: 50%;
+  top: 0;
+  background-color: rgb(253, 72, 72);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.section1 .arrange1 > div:nth-of-type(3) {
+  right: 0%;
+  top: 0;
+  background-color: rgb(252, 127, 127);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(2) > div:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 0;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(2) > div:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: rgb(37, 122, 37);
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(2) > div:nth-of-type(3) {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 0;
+  background-color: rgb(86, 143, 86);
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(3) > div:nth-of-type(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 0, 234);
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(3) > div:nth-of-type(2) {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  bottom: 0;
+  background-color: rgb(248, 89, 235);
+  width: 100px;
+  height: 100px;
+}
+.section1 div:nth-of-type(3) > div:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(248, 89, 235);
+  width: 100px;
+  height: 100px;
+}
+// styles for arrange 2
+.arrange2 {
+  width: 1000px;
+  height: 500px;
+  background-color: blue;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+.arrange2 div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(173, 199, 121);
+  position: absolute;
+}
+.arrange2 div:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+.arrange2 div:nth-of-type(2) {
+  transform: translate(-50%);
+  left: 50%;
+  top: 0;
+  background-color: rgb(253, 72, 72);
+}
+.arrange2 div:nth-of-type(3) {
+  top: 0;
+  right: 0;
+  background-color: rgb(245, 159, 159);
+}
+.arrange2 div:nth-of-type(4) {
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 0;
+  background-color: green;
+}
+.arrange2 div:nth-of-type(5) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: rgb(43, 122, 43);
+}
+.arrange2 div:nth-of-type(6) {
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 0;
+  background-color: rgb(75, 121, 75);
+}
+.arrange2 div:nth-of-type(7) {
+  left: 0;
+  bottom: 0;
+  background-color: orange;
+}
+.arrange2 div:nth-of-type(8) {
+  transform: translate(-50%);
+  left: 50%;
+  bottom: 0;
+  background-color: rgb(247, 191, 88);
+}
+.arrange2 div:nth-of-type(9) {
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 218, 151);
+}
