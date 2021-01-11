@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#form {
+  position: absolute;
+  max-width: 500px;
+  height: 580px;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+#form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  word-spacing: 10px;
+}
+.input-group {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all ease 500ms;
+  font-family: "Montserrat", sans-serif;
+}
+button:hover {
+  color: #fff;
+  background-color: #8842a9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+input {
+  background: #5f0a87;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  position: relative;
+}
+input::placeholder {
+  font-size: 14px;
+}
+p {
+  position: absolute;
+  bottom: -35px;
+  display: inline-block;
+  color: red;
+  font-size: 12px;
+  right: 90px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:focus {
+  border-color: green;
+}
