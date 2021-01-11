@@ -1,0 +1,45 @@
+// Styles for part1
+
+.part1 > p:nth-child(1) {
+  color: red;
+}
+.part1 p:last-of-type {
+  color: yellow;
+}
+.part1 span:first-of-type {
+  color: blue;
+}
+.part1 > div p {
+  color: green;
+}
+
+// Styles for part2
+.part2 ol li:nth-child(3n) {
+  color: green;
+}
+.part2 ol li {
+  color: red;
+}
+
+// Styles for part3
+.part3 > div:nth-child(7n) {
+  color: red;
+}
+.part3 > div {
+  color: blue;
+}
+
+// Styles for part4
+.part4 ul li:nth-child(1) a,
+.part4 div:nth-child(2) a,
+.part4 p a {
+  color: yellow;
+}
+.part4 ul li:nth-child(2) a {
+  color: green;
+}
+.part4 ul li:nth-child(3) a,
+.part4 div:nth-child(1) a,
+.part4 a:last-of-type {
+  color: red;
+}
