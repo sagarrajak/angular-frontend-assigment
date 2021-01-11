@@ -1,15 +1,51 @@
-#colorchilderen {
-    // overider this for second problem 
+// Section 1 styles
+
+a[href$=".com"] {
+  color: red !important;
+}
+
+// Section 2 styles
+#colorchilderen > div > div:first-of-type > div {
+  color: red;
+}
+#colorchilderen > div > div:nth-of-type(2) > div {
+  color: yellow;
+}
+#colorchilderen > div {
+  color: green;
 }
 
 #bluecolor {
-    // for second problem
+  // for second problem
 }
 
-#evenodd {
-    // for third problem 
+// Section 4 styles
+#evenodd li:nth-child(even) {
+  color: red;
+}
+#evenodd li:nth-child(odd) {
+  color: green;
 }
 
-#lastselector {
-    // for fourth problem 
+// Section 5 styles
+#lastselector ul li:last-of-type {
+  color: red;
+}
+
+// Section 6 styles
+a:hover {
+  color: red !important;
+  cursor: pointer;
+  display: inline-block;
+}
+a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+a:active {
+  color: blue !important;
+}
+a:visited {
+  columns: blue !important;
 }
