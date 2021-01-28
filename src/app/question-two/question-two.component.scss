@@ -1,0 +1,69 @@
+.part1 {
+  p:first-of-type {
+    color: red;
+  }
+
+  span {
+    color: blue;
+  }
+
+  p:last-child {
+    color: yellow;
+  }
+
+  div>p:first-of-type {
+    color: green;
+  }
+}
+
+.part2 {
+  li:nth-child(3n) {
+    color: green
+  }
+
+  li {
+    color: red;
+  }
+}
+
+.part3 {
+  div:nth-child(n) {
+    color: blue;
+  }
+
+  .iAffectMyNextdiv {
+    color: red;
+
+    +div {
+      color: red;
+    }
+  }
+
+}
+
+.part4 {
+  a {
+    color: red;
+  }
+
+  div:nth-child(1) a {
+    color: red;
+  }
+
+  div:nth-child(2) a,
+  p a {
+    color: yellow;
+  }
+
+  ul li:nth-child(1) a {
+    color: yellow;
+  }
+
+  ul li:nth-last-child(1) a {
+    color: red;
+  }
+
+  ul li a {
+    color: green;
+  }
+}

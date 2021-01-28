@@ -1,3 +1,65 @@
-.t{
+.t {
   background: red;
+}
+
+.t1 {
+  display: none;
+}
+
+.t2 {
+  opacity: 0;
+}
+
+.t3 {
+  visibility: hidden;
+}
+
+.t4 {
+  position: absolute;
+  left: -100rem;
+}
+
+.t5 {
+  background: white !important;
+  color: white;
+}
+
+.t6 {
+  transform: scale(0);
+}
+
+.t7 {
+  font-size: 0;
+}
+
+.t8 {
+  margin-left: -90rem;
+  width: 1px;
+}
+
+.t9 {
+  filter: opacity(0);
+}
+
+.t10 {
+  clip-path: circle(0);
+}
+
+.t11 {
+  height: 0;
+  overflow: hidden;
+}
+
+.t12 {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+  }
 }

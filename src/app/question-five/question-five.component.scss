@@ -1,0 +1,41 @@
+.task {
+  h3 {
+    color: gray;
+
+    @media only screen and (max-width: 900px) {
+      color: orange;
+    }
+
+    @media only screen and (max-width: 800px) {
+      color: blue;
+    }
+
+    @media only screen and (max-width: 700px) {
+      color: red;
+    }
+
+    @media only screen and (max-width: 600px) {
+      color: purple;
+    }
+
+    @media only screen and (max-width: 500px) {
+      color: orange;
+    }
+
+    @media only screen and (max-width: 400px) {
+      color: yellow;
+    }
+
+    @media only screen and (max-width: 300px) {
+      color: green;
+    }
+
+    @media only screen and (max-width: 200px) {
+      color: blue;
+    }
+
+    @media only screen and (max-width: 100px) {
+      color: red;
+    }
+  }
+}

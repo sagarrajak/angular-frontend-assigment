@@ -1,15 +1,49 @@
 #colorchilderen {
-    // overider this for second problem 
+
+  // overider this for second problem 
+  * {
+    color: green;
+  }
+
+  >div :nth-child(n) {
+    color: red;
+  }
+
+  >div:nth-child(1) {
+    div>div :nth-child(n) {
+      color: yellow;
+    }
+  }
 }
 
 #bluecolor {
-    // for second problem
+
+  // for second problem
+  :nth-child(2) {
+    color: blue;
+  }
 }
 
 #evenodd {
-    // for third problem 
+
+  // for third problem 
+  :nth-child(2n) {
+    color: red;
+  }
+
+  :nth-child(2n-1) {
+    color: green;
+  }
 }
 
 #lastselector {
-    // for fourth problem 
+
+  // for fourth problem 
+  li:nth-last-child(1) {
+    color: red;
+  }
+}
+
+a[href="http://example.com"] {
+  color: red;
 }
