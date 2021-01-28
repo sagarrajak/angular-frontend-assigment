@@ -1,0 +1,170 @@
+.arrange1 {
+  width: 1000px;
+  height: 1000px;
+  background-color: blue;
+  position: relative;
+
+  div {
+    width: 100px;
+    height: 100px;
+  }
+
+  div:nth-child(1) {
+    background: red;
+  }
+
+  div:nth-child(2) {
+    background-color: violet;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+  }
+
+  div:nth-child(3) {
+    background-color: grey;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.arrange2 {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  display: flex;
+  background-color: blue;
+  margin-top: 2rem;
+
+  div {
+    width: 100px;
+    height: 100px;
+  }
+
+  div:nth-child(1) {
+    background: red;
+  }
+
+  div:nth-child(2) {
+    background-color: violet;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+  }
+
+  div:nth-child(3) {
+    background-color: grey;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  div:nth-child(4) {
+    background: orange;
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+
+  div:nth-child(5) {
+    background: brown;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+
+  div:nth-child(6) {
+    background: pink;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+  }
+
+  div:nth-child(7) {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  div:nth-child(8) {
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+  }
+
+  div:nth-child(9) {
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.section1 {
+  div:nth-of-type(2) {
+    position: absolute;
+
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    div:nth-child(1) {
+      position: relative;
+      background-color: orange;
+      top: -550px;
+      left: 0
+    }
+
+    div:nth-child(2) {
+      position: relative;
+      background-color: yellow;
+      top: -650px;
+      left: 450px;
+    }
+
+    div:nth-child(3) {
+      position: relative;
+      background-color: violet;
+      top: -750px;
+      left: 900px;
+    }
+  }
+
+  div:nth-of-type(3) {
+    position: absolute;
+
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    div:nth-child(1) {
+      position: relative;
+      background-color: purple;
+      top: -100px;
+      left: 0
+    }
+
+    div:nth-child(2) {
+      position: relative;
+      background-color: yellow;
+      top: -200px;
+      left: 450px;
+    }
+
+    div:nth-child(3) {
+      position: relative;
+      background-color: violet;
+      top: -300px;
+      left: 900px;
+    }
+  }
+}
