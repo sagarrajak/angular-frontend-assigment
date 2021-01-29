@@ -22,12 +22,12 @@ export class QuestionOneComponent {
   constructor() { 
     this.userForm = new FormGroup({
       'firstName': new FormControl('', [Validators.required]),
-      'lastName': new FormControl('', [Validators.required]),
-      'emailField': new FormControl('', [Validators.email, Validators.required]),
-      'ageField': new FormControl('', [Validators.min(18), Validators.max(30)]),
-      'address1': new FormControl('', [Validators.required , Validators.maxLength(10)]),
-      'address2': new FormControl('', []),
-      'address3': new FormControl('', []),
+      'middleName': new FormControl('', [Validators.required]),
+      'Email': new FormControl('', [Validators.email, Validators.required]),
+      'Age': new FormControl('', [Validators.required,Validators.min(18), Validators.max(30)]),
+      'Address': new FormControl('', [Validators.required , Validators.maxLength(10)]),
+      'Address2': new FormControl('', []),
+      'Address3': new FormControl('', []),
     });
   }
 

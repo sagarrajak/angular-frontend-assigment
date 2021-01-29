@@ -9,7 +9,7 @@
   <li> Do not use external css library </li>
   <li> You can edit html file (for only this question)</li>
 </ol>
-<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
+<!-- <form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
     <h1>simple user details form</h1>
     <br/>
     <label>First name(required)</label>
@@ -53,4 +53,78 @@
     <input type="text"  placeholder="Adress3" name='address3'  />
     <br/>
     <button type="submit">submit</button>
+    </form> -->
+
+
+    <br/>
+    
+    <div className="my-5">
+        <h1 className="text-center">This is updated output</h1>
+    </div>
+    
+<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
+    <div class = "container-fluid main_container">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="mb-3">
+                    <label for = "first_name" class="form-label">First Name :- </label>
+                    <input type = "text" class="form-control" placeholder="Enter First Name" name="firstname" formControlName='firstName'/>
+                    <ng-container *ngIf="(userForm.controls['firstName'].touched || userForm.controls['firstName'].dirty) && userForm.controls['firstName'].invalid">
+                        <p *ngIf="userForm.controls['firstName'].errors.required">Field is required</p>
+                    </ng-container>
+                </div>
+
+                <div class="mb-3">
+                    <label for = "middle" class="form-label">Middle Name :- </label>
+                    <input type = "text" class="form-control" placeholder="Enter Middle Name" name="middlename" formControlName='middleName'/>
+                    <ng-container *ngIf="(userForm.controls['middleName'].touched || userForm.controls['middleName'].dirty) && userForm.controls['middleName'].invalid">
+                        <p *ngIf="userForm.controls['middleName'].errors.required">Field is required</p>
+                    </ng-container>
+                </div>
+
+                <div class="mb-3">
+                    <label for = "email" class="form-label">Email :- </label>
+                    <input type = "text" class="form-control" placeholder="Enter Email" name="email" formControlName='Email'/>
+                    <ng-container *ngIf="(userForm.controls['Email'].touched || userForm.controls['Email'].dirty) && userForm.controls['Email'].invalid">
+                        <p *ngIf="userForm.controls['Email'].errors.required">Field is required</p>
+                        <p *ngIf="userForm.controls['Email'].errors.email">Invalid email address</p>
+                    </ng-container>
+                </div>
+
+                <div class="mb-3">
+                    <label for = "age" class="form-label">Enter Age:- </label>
+                    <input type = "text" class="form-control" placeholder="Enter your age" name="age" formControlName='Age'/>
+                    <ng-container *ngIf="(userForm.controls['Age'].touched || userForm.controls['Age'].dirty) && userForm.controls['Age'].invalid">
+                        <p *ngIf="userForm.controls['Age'].errors.required">Field is required</p>
+                        <p *ngIf="userForm.controls['Age'].errors.min">Minimum age is 18</p>
+                        <p *ngIf="userForm.controls['Age'].errors.max">Maximum age is 30</p>
+                    </ng-container>
+                </div>
+
+                <div class="mb-3">
+                    <label for = "address" class="form-label">Enter Address:- </label>
+                    <input type = "text" class="form-control" placeholder="Enter Address" name="address" formControlName='Address'/>
+                    <ng-container *ngIf="(userForm.controls['Address'].touched || userForm.controls['Address'].dirty) && userForm.controls['Address'].invalid">
+                        <p *ngIf="userForm.controls['Address'].errors.required">Field is required</p>
+                        <p *ngIf="userForm.controls['Address'].errors.maxlength">Max length is 10</p>
+                    </ng-container>
+                </div>
+
+                <div class="mb-3">
+                    <label for = "address" class="form-label">Enter Address:- </label>
+                    <input type="text" class="form-control" placeholder="Adress2" name='Address2' />
+                </div>
+
+                <div class="mb-3">
+                    <label for = "address" class="form-label">Enter Address:- </label>
+                    <input type="text" class="form-control" placeholder="Adress2" name='Address3' />
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </form>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  $main-bg: blue;
+  $text-color: white;
+  $red-color: red;
+  $black-color: black;
+
+  :root{
+    --main-bg: #{$main-bg};
+    --text-color: #{$text-color};
+    --red-color: #{$red-color};
+    --black-color: #{$black-color};
+  }
+
+  .arrange1 {
+    width: 1000px;
+    height: 1000px;
+    background-color: $main-bg;
+    position: relative;
+    display: flex;
+  
+    div {
+      width: 100px;
+      height: 100px;
+    }
+  
+    div:nth-child(1) {
+      color: $text-color;
+      background: $red-color;
+    }
+  
+    div:nth-child(2) {
+      background-color: $black-color;
+      color: $text-color;
+      position: absolute;
+      top: 0%;
+      left: 450px;
+    }
+  
+    div:nth-child(3) {
+      background-color:$red-color;
+      color: $text-color;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  
+  .arrange2 {
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    background-color: $main-bg;
+    margin-top: 3rem;
+  
+    div {
+      width: 100px;
+      height: 100px;
+    }
+  
+    div:nth-child(1) {
+      background: $red-color;
+      color: $text-color;
+    }
+  
+    div:nth-child(2) {
+      background-color: $black-color;
+      color: $text-color;
+      position: absolute;
+      top: 0%;
+      left: 45%;
+    }
+  
+    div:nth-child(3) {
+      background-color: $red-color;
+      color: $text-color;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+    div:nth-child(4) {
+      background: $black-color;
+      color: $text-color;
+      position: absolute;
+      top: 45%;
+      left: 0;
+    }
+  
+    div:nth-child(5) {
+      background-color: $red-color;
+      color: $text-color;
+      position: absolute;
+      top: 45%;
+      left: 45%;
+    }
+  
+    div:nth-child(6) {
+      background: $black-color;
+      color: $text-color;
+      position: absolute;
+      top: 45%;
+      right: 0%;
+    }
+  
+    div:nth-child(7) {
+      background-color: $red-color; 
+      color: $text-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  
+    div:nth-child(8) {
+      background: $black-color;
+      color: $text-color;
+      position: absolute;
+      bottom: 0;
+      right: 45%;
+    }
+  
+    div:nth-child(9) {
+      background-color: $red-color; 
+      color: $text-color;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  
+  .section1 {
+    div:nth-of-type(2) {
+      position: absolute;
+  
+      div {
+        width: 100px;
+        height: 100px;
+      }
+  
+      div:nth-child(1) {
+        background: $black-color;
+        color: $text-color;
+        position: relative;
+        top: -550px;
+        left: 0
+      }
+  
+      div:nth-child(2) {
+        background: $red-color;
+        color: $text-color;
+        position: relative;
+        top: -650px;
+        left: 450px;
+      }
+  
+      div:nth-child(3) {
+        background: $black-color;
+        color: $text-color;
+        position: relative;
+        
+        top: -750px;
+        left: 900px;
+      }
+    }
+  
+    div:nth-of-type(3) {
+      position: absolute;
+  
+      div {
+        width: 100px;
+        height: 100px;
+      }
+  
+      div:nth-child(1) {
+        background: $red-color;
+        color: $text-color;
+        position: relative;
+        top: -100px;
+        left: 0
+      }
+  
+      div:nth-child(2) {
+        background: $black-color;
+        color: $text-color;
+        position: relative;
+        top: -200px;
+        left: 450px;
+      }
+  
+      div:nth-child(3) {
+        background: $red-color;
+        color: $text-color;
+        position: relative;
+        top: -300px;
+        left: 900px;
+      }
+    }
+  }
