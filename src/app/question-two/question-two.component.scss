@@ -1,0 +1,46 @@
+.part1 p{
+    color:red;
+
+}
+.part1 div p{
+    color:green;
+}
+.part1 span{
+    color:blue;
+}
+
+.part1 div+p{
+color:yellow;
+}
+
+.part2 li:nth-child(n){
+    color:red;
+}
+.part2 li:nth-child(3n){
+    color:green;
+}
+.part3{
+    color:blue;
+}
+.iAffectMyNextdiv+div{
+    color:red;
+}
+
+.part4 :not(a[target]){
+    color:red;
+}
+.part4 a[target=_blank]{
+    color:yellow;
+}
+.part4 ul li :not(a[target]){
+    color:green;
+}
+
+.part4 ul li:nth-child(n){
+    color: yellow;
+}
+.part4 ul li:nth-child(2n){
+    color: green;
+}.part4 ul li:nth-child(3n){
+    color: red;
+}

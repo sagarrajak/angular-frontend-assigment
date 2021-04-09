@@ -1,0 +1,32 @@
+input.ng-touched.ng-invalid {
+    border-color: red;
+ }
+ input.ng-touched.ng-valid {
+    border-color: green;
+ }
+
+ p{
+     color: red;
+ }
+
+ label{
+     width: 150px;
+ }
+
+
+ label::after{
+     content: '*';
+     color:red;
+ }
+
+ button{
+     padding: 5px 15px;
+     border-radius: 50px;
+     color: white;
+     background:black;
+     cursor: pointer;
+ }
+
+ button:hover{
+     background:green;
+ }

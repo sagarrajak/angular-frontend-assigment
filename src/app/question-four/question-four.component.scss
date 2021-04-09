@@ -1,3 +1,25 @@
 .t{
   background: red;
 }
+
+.t1{
+  display: none;
+}
+
+.t2{
+  visibility: hidden;
+
+}
+.t3{
+  opacity: 0;
+}
+
+.t4{
+  position: absolute;
+  left:-999px;
+}
+
+
+.t5{
+  transform: scale(0);
+}
