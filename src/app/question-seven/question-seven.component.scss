@@ -1,15 +1,44 @@
-#colorchilderen {
+a[href$='.com']{
+    color:red;
+}
+
+#colorchilderen div div div {
+    color:red;
+    // overider this for second problem 
+}
+#colorchilderen div div div  div{
+    color:yellow;
+    // overider this for second problem 
+}
+#colorchilderen div {
+    color:green;
     // overider this for second problem 
 }
 
-#bluecolor {
-    // for second problem
-}
 
-#evenodd {
+#bluecolor li:nth-child(even){
+    // for second problem
+    color: blue;
+}
+#bluecolor ul li ul li ul li:nth-child(even){
+    // for second problem
+    color: black;
+}
+#evenodd li:nth-child(even) {
+    color:red;
+    // for third problem 
+}
+#evenodd li:nth-child(odd) {
+    color:green;
     // for third problem 
 }
 
-#lastselector {
+
+#lastselector li:last-child{
+    color:red;
     // for fourth problem 
+}
+
+a:hover{
+    color:red;
 }

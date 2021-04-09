@@ -7,4 +7,37 @@
 
     //overide here 
 }
+#main div:nth-child(n){
+    position:absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
 
+}
+#main div:nth-child(2n){
+    position:absolute;
+    top:0;
+    left:250px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+
+}#main div:nth-child(3n){
+    position:absolute;
+    top:250px;
+    left:0;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+
+}#main div:nth-child(4n){
+    position:absolute;
+    top:250px;
+    left:250px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+
+}
