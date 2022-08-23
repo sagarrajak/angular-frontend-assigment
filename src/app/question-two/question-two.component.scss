@@ -1,0 +1,56 @@
+//------------------------Question-Two-Part-One--------------------//@at-root
+$blue-color: blue;
+$red-color: red;
+$green-color: green;
+$yellow-color: yellow;
+.part1 {
+  p:first-child {
+    color: $red-color;
+  }
+  p:last-child {
+    color: $yellow-color;
+  }
+  div {
+    p {
+      color: $green-color;
+    }
+  }
+  span {
+    color: $blue-color;
+  }
+}
+
+//------------------------Question-Two-Part-Two--------------------//@at-root
+.part2 {
+  li:nth-child(3n + 0) {
+    color: $green-color;
+  }
+  li {
+    color: $red-color;
+  }
+}
+
+//------------------------Question-Two-Part-Three-------------------//@at-root
+.part3 {
+  div {
+    color: $blue-color;
+  }
+  .iAffectMyNextdiv {
+    + div {
+      color: $red-color;
+    }
+  }
+}
+
+//------------------------Question-Two-Part-Four-------------------//@at-root
+.part4 {
+  a {
+    color: $green-color;
+  }
+  a[href] {
+    color: $red-color;
+  }
+  a[target="_blank"] {
+    color: $yellow-color;
+  }
+}

@@ -5,6 +5,30 @@
     position: absolute;
     color: white;
 
-    //overide here 
+    //overide here
+    div{
+        position: absolute; 
+        color: #000;
+    }
+    div:nth-child(1){
+        bottom: 0px;
+        left: 0px;
+        background-color: green;
+    }
+    div:nth-child(2){
+        bottom: 0px;
+        right: 0px;
+        background-color: yellow;
+    }
+    div:nth-child(3){
+        top: 0px;
+        right: 0px;
+        background-color: blue;
+    }
+    div:nth-child(4){
+        top: 0px;
+        left: 0px;
+        background-color: pink;
+    }
 }
 

@@ -9,7 +9,7 @@
   <li> Do not use external css library </li>
   <li> You can edit html file (for only this question)</li>
 </ol>
-<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
+<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)' class="formExample">
     <h1>simple user details form</h1>
     <br/>
     <label>First name(required)</label>
@@ -47,10 +47,14 @@
     </ng-container>
     <br>
     <label>Address2</label>
-    <input type="text"  placeholder="Adress2" name='address2' />
+    <input type="text"  placeholder="Adress2" name='address2' formControlName='address2'/>
+    <ng-container *ngIf="(userForm.controls['address2'].touched || userForm.controls['address2'].dirty)">
+    </ng-container>
     <br/>
     <label>Address3</label>
-    <input type="text"  placeholder="Adress3" name='address3'  />
+    <input type="text"  placeholder="Adress3" name='address3'  formControlName='address3' />
+    <ng-container *ngIf="(userForm.controls['address3'].touched || userForm.controls['address3'].dirty)">
+    </ng-container>
     <br/>
-    <button type="submit">submit</button>
+    <button type="submit" class="continueBtn">submit</button>
 </form>

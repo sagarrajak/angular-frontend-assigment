@@ -1,0 +1,35 @@
+//------------------------Question-Three--------------------//
+@mixin common-css {
+  height: 1000px;
+  width: 1000px;
+  background-color: blue;
+}
+@mixin child-div {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+}
+@mixin grid-css {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 100px 100px 100px;
+}
+.section1 {
+  @include common-css;
+  > div {
+    @include grid-css;
+    div {
+      @include child-div;
+    }
+  }
+}
+
+.arrange2 {
+  @include common-css;
+  @include grid-css;
+  div {
+    @include child-div;
+  }
+}

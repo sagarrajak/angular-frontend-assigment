@@ -1,3 +1,52 @@
-.t{
+.t {
   background: red;
+}
+.t.t1 {
+  display: none;
+}
+.t.t2 {
+  visibility: hidden;
+}
+.t.t3 {
+  opacity: 0;
+}
+.t.t4 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.t.t5 {
+  clip-path: circle(0);
+}
+.t.t6 {
+  transform: scale(0);
+}
+.t.t7 {
+  position: relative;
+}
+.t.t7::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  bottom: 0;
+}
+.t.t8 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.t.t9 {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+.t.t10 {
+  filter: opacity(0);
+}
+.t.t11 {
+  color: transparent;
 }

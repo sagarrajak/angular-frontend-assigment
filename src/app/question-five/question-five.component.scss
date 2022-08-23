@@ -1,0 +1,37 @@
+@mixin set-css($index,$color){
+    .color-index{
+        li:nth-child(#{$index}){
+            color:$color;
+        }
+    } 
+}
+@media (min-width: 0px) and (max-width: 100px) {
+    @include set-css(1,red)
+ }
+ @media (min-width: 101px) and (max-width: 200px) {
+    @include set-css(2,blue)
+ }
+ @media (min-width: 201px) and (max-width: 300px) {
+    @include set-css(3,green)
+ }
+ @media (min-width: 301px) and (max-width: 400px) {
+    @include set-css(4,yellow)
+ }
+ @media (min-width: 401px) and (max-width: 500px) {
+    @include set-css(5,orange)
+ }
+ @media (min-width: 501px) and (max-width: 600px) {
+    @include set-css(6,purple)
+ }
+ @media (min-width: 601px) and (max-width: 700px) {
+    @include set-css(7,red)
+ }
+ @media (min-width: 701px) and (max-width: 800px) {
+    @include set-css(8,blue)
+ }
+ @media (min-width: 801px) and (max-width: 900px) {
+    @include set-css(9,orange)
+ }
+ @media (min-width: 901px) {
+    @include set-css(10,grey)
+ }
