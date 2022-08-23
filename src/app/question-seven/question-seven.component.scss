@@ -1,15 +1,57 @@
+//------------------------Question-Seven-Part-One--------------------//
+
+a[href$=".com"]{
+   color:red; 
+}
+
 #colorchilderen {
     // overider this for second problem 
+    div{
+        div{
+            div{
+                color:red;
+            }
+            div:only-child{
+                color: yellow;
+            }
+        }
+    }
+    div:nth-last-child(-n+4){
+        color:green;
+    }
 }
 
 #bluecolor {
     // for second problem
+    li:nth-child(2){
+        color: blue;
+    }
 }
 
 #evenodd {
     // for third problem 
+    li:nth-child(even){
+        color: red;
+    }
+    li:nth-child(odd){
+        color: green;
+    }
 }
 
 #lastselector {
     // for fourth problem 
+    li:last-child{
+        color: red;
+    }
 }
+
+  /* mouse over link */
+  a:not([href]):hover {
+    color: red;
+    cursor: pointer;
+  }
+
+a:not([href]):active,a:not([href]):visited{
+    color: blue;
+  }
+  
