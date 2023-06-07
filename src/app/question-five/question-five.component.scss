@@ -1,0 +1,133 @@
+$color-red: red;
+$color-blue: blue;
+$color-green: green;
+$color-yellow: yellow;
+$color-orange: orange;
+$color-purple: purple;
+$color-grey: grey;
+
+$breakpoint-1: 100px;
+$breakpoint-2: 200px;
+$breakpoint-3: 300px;
+$breakpoint-4: 400px;
+$breakpoint-5: 500px;
+$breakpoint-6: 600px;
+$breakpoint-7: 700px;
+$breakpoint-8: 800px;
+$breakpoint-9: 900px;
+
+.container {
+  ol.color-index {
+    li {
+      &:nth-child(1) {
+        color: $color-red;
+      }
+      &:nth-child(2) {
+        color: $color-blue;
+      }
+      &:nth-child(3) {
+        color: $color-green;
+      }
+      &:nth-child(4) {
+        color: $color-yellow;
+      }
+      &:nth-child(5) {
+        color: $color-orange;
+      }
+      &:nth-child(6) {
+        color: $color-purple;
+      }
+      &:nth-child(7) {
+        color: $color-red;
+      }
+      &:nth-child(8) {
+        color: $color-blue;
+      }
+      &:nth-child(9) {
+        color: $color-orange;
+      }
+      &:nth-child(10) {
+        color: $color-grey;
+      }
+    }
+  }
+}
+
+.task.default {
+  h3 {
+    color: $color-grey;
+  }
+}
+
+// Media Queries
+@media (min-width: 0px) and (max-width: $breakpoint-1) {
+  .task.default {
+    h3 {
+      color: $color-red;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
+  .task.default {
+    h3 {
+      color: $color-blue;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-2) and (max-width: $breakpoint-3) {
+  .task.default {
+    h3 {
+      color: $color-green;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-3) and (max-width: $breakpoint-4) {
+  .task.default {
+    h3 {
+      color: $color-yellow;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-4) and (max-width: $breakpoint-5) {
+  .task.default {
+    h3 {
+      color: $color-orange;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-5) and (max-width: $breakpoint-6) {
+  .task.default {
+    h3 {
+      color: $color-purple;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-6) and (max-width: $breakpoint-7) {
+  .task.default {
+    h3 {
+      color: $color-red;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-7) and (max-width: $breakpoint-8) {
+  .task.default {
+    h3 {
+      color: $color-blue;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-8) and (max-width: $breakpoint-9) {
+  .task.default {
+    h3 {
+      color: $color-orange;
+    }
+  }
+}

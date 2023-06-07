@@ -1,3 +1,80 @@
 .t{
   background: red;
 }
+/* Technique 1: Display None */
+.t1 {
+  display: none;
+}
+
+/* Technique 2: Visibility Hidden */
+.t2 {
+  visibility: hidden;
+}
+
+/* Technique 3: Opacity 0 */
+.t3 {
+  opacity: 0;
+}
+
+/* Technique 4: Height 0 and Overflow Hidden */
+.t4 {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Technique 5: Position Absolute and Left -9999px */
+.t5 {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Technique 6: Width 0 and Overflow Hidden */
+.t6 {
+  width: 0;
+  overflow: hidden;
+}
+
+/* Technique 7: Transform Scale 0 */
+.t7 {
+  transform: scale(0);
+}
+
+/* Technique 8: Clip Path */
+.t8 {
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+/* Technique 9: Negative Margin */
+.t9 {
+  margin-top: -9999px;
+}
+
+/* Technique 10: Font Size 0 */
+.t10 {
+  font-size: 0;
+}
+
+/* Technique 11: Border Width 0 */
+.t11 {
+  border-width: 0;
+}
+
+/* Technique 12: Background Color Transparent */
+.t12 {
+  background-color: transparent;
+}
+
+/* Technique 13: Box Shadow None */
+.t13 {
+  box-shadow: none;
+}
+
+/* Technique 14: Text Indent -9999px */
+.t14 {
+  text-indent: -9999px;
+}
+
+/* Technique 15: Pointer Events None */
+.t15 {
+  pointer-events: none;
+}
