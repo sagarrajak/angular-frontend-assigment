@@ -1,0 +1,80 @@
+$color_1: red;
+$color_2: blue;
+$color_3: green;
+$color_4: yellow;
+
+.part1 {
+	p:nth-child(1) {
+	  color: $color_1;
+	}
+	
+	span:nth-child(2),
+	div > span:nth-child(2) {
+	  color: $color_2;
+	}
+	
+	div > p {
+	  color: $color_3;
+	}
+	
+	p {
+	  color: $color_4;
+	}
+  }
+
+  .part2 {
+	
+	li{
+		color: $color_1;
+	}
+	ol {
+	  
+	  li:nth-child(3n) {
+		color: $color_3;
+	  }
+	}
+  }
+  
+  .part3 {
+	div {
+	  color: blue;
+	  
+	  & + .iAffectMyNextdiv {
+		color: red;
+	  }
+	  
+	  & + span.iAffectMyNextdiv + div {
+		color: red;
+	  }
+	}
+	
+	span {
+	  color: blue;
+	  
+	  &.iAffectMyNextdiv {
+		color: red;
+	  }
+	}
+  }
+
+  .part4 a{
+    color: red;
+}
+
+
+.part4 div:nth-child(2) a,
+.part4 div:nth-child(3) a {
+  color: yellow; /* Make me Yellow */
+}
+
+.part4 ul li:nth-child(1) a {
+    color: yellow; /* Make me Green */
+  }
+
+.part4 ul li:nth-child(2) a {
+  color: green; /* Make me Green */
+}
+
+.part4 p:first-of-type a{
+    color: yellow;
+}
