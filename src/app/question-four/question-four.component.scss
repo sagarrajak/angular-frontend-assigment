@@ -1,3 +1,65 @@
-.t{
+.t {
   background: red;
+}
+
+.t1 {
+  display: none;
+}
+.t2 {
+  visibility: hidden;
+}
+.t3 {
+  scale: 0;
+}
+.t4 {
+  transform: scale(0);
+}
+.t5 {
+  opacity: 0;
+}
+.t6 {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.t7 {
+  clip-path: circle(0%);
+}
+.t8 {
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+}
+.t9 {
+  animation: hideT9 0.5s forwards;
+}
+.t10 {
+  animation: hideT10 0.5s forwards;
+}
+.t11 {
+  animation: hideT11 0.5s forwards;
+  overflow: hidden;
+}
+
+@keyframes hideT9 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hideT10 {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes hideT11 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-2000px);
+  }
 }

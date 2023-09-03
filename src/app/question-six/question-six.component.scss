@@ -1,10 +1,36 @@
 #main {
-    width: 300px;
-    height: 300px;
-    background-color:red;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  color: white;
+
+  //overide here
+  & div {
     position: absolute;
-    color: white;
-
-    //overide here 
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    color: gray;
+    &:nth-child(1) {
+      bottom: 0;
+      left: 0;
+      background: green;
+    }
+    &:nth-child(2) {
+      bottom: 0;
+      right: 0;
+      background: yellow;
+    }
+    &:nth-child(3) {
+      top: 0;
+      right: 0px;
+      background: blue;
+    }
+    &:nth-child(4) {
+      top: 0;
+      left: 0;
+      background: pink;
+    }
+  }
 }
-

@@ -1,0 +1,68 @@
+.part1 {
+  p {
+    background: rgb(255, 235, 235);
+    color: red;
+  }
+  span,
+  div span {
+    background: rgb(236, 235, 255);
+    color: blue;
+  }
+  div {
+    p {
+      background: rgb(235, 255, 236);
+      color: green;
+    }
+  }
+  p:last-child {
+    background: rgb(255, 255, 235);
+    color: yellow;
+  }
+}
+
+.part2 {
+  ol li {
+    color: red;
+    &:nth-child(3n) {
+      color: green;
+    }
+  }
+}
+
+.part3 {
+  div {
+    color: blue;
+  }
+  span.iAffectMyNextdiv,
+  span.iAffectMyNextdiv + div {
+    color: red;
+  }
+}
+
+.part4 {
+  div a {
+    color: red;
+    &[target="_blank"] {
+      color: yellow;
+    }
+  }
+  ul {
+    li {
+      a[target="_blank"] {
+        color: yellow;
+      }
+      a {
+        color: green;
+      }
+    }
+    li:last-child a {
+      color: red;
+    }
+  }
+  p a[target="_blank"] {
+    color: yellow;
+  }
+  a {
+    color: red;
+  }
+}
