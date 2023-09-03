@@ -1,0 +1,29 @@
+.section1 {
+  background: blue;
+  height: 1000px;
+  width: 1000px;
+  & > div {
+    display: flex;
+  }
+  & > div > div {
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin: 1px;
+  }
+  & > div:nth-child(odd) > div:nth-child(even),
+  & > div:nth-child(even) > div:nth-child(odd) {
+    background-color: green; /* Change color for odd rows and even columns, and vice versa */
+  }
+}
+
+.arrange2 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  & > div {
+    height: 100px;
+    margin: 1px;
+    background: grey;
+  }
+  transform: translateY(-500px);
+}

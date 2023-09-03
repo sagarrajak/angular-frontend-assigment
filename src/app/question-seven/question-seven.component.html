@@ -1,126 +1,135 @@
 <b>To Note</b>
 <ol>
-  <li>Don't touch <b>html</b> file, make changes on only <b>css</b> or <b>scss</b> file.</li>
+  <li>
+    Don't touch <b>html</b> file, make changes on only <b>css</b> or
+    <b>scss</b> file.
+  </li>
 </ol>
-<h4>1) Make every a .com link as red color using only one selector (either class or id ) (hint: try to use attribute
-    selector)</h4>
+<h4>
+  1) Make every a .com link as red color using only one selector (either class
+  or id ) (hint: try to use attribute selector)
+</h4>
 <br />
-<a id='link1' href="http://example.org">Org 1</a>
+<a id="link1" href="http://example.org">Org 1</a>
 <br />
-<a id='link2' href="http://example.com">com 1</a>
+<a id="link2" href="http://example.com">com 1</a>
 <br />
-<a id='link3' href="http://example.com">Org 2</a>
+<a id="link3" href="http://example.com">Org 2</a>
 <br />
-<a id='link4' href="http://example.com">com 1</a>
+<a id="link4" href="http://example.com">com 1</a>
 
 <br />
 <h4>2) Use child or decendent selector for coloring text, as per mention.</h4>
-<div id='colorchilderen'>
+<div id="colorchilderen">
+  <div>
     <div>
-        <div>
-            <div>red</div>
-            <div>red</div>
-            <div>red</div>
-            <div>red</div>
-        </div>
-        <div>
-            <div>
-                <div>yellow</div>
-            </div>
-        </div>
+      <div>red</div>
+      <div>red</div>
+      <div>red</div>
+      <div>red</div>
     </div>
-    <div>green</div>
-    <div>green</div>
-    <div>green</div>
-    <div>green</div>
+    <div>
+      <div>
+        <div>yellow</div>
+      </div>
+    </div>
+  </div>
+  <div>green</div>
+  <div>green</div>
+  <div>green</div>
+  <div>green</div>
 </div>
 
 <h4>2) Make second child of every list as blue color.</h4>
-<div id='bluecolor'>
-    <ul>
+<div id="bluecolor">
+  <ul>
+    <li>
+      <ul>
+        <li>second</li>
+        <li>second</li>
+        <li>second</li>
+        <li>second</li>
+        <li>second</li>
         <li>
-            <ul>
-                <li>second</li>
-                <li>second</li>
-                <li>second</li>
-                <li>second</li>
-                <li>second</li>
-                <li>
-                    <ul>
-                        <li>third</li>
-                        <li>third</li>
-                        <li>third</li>
-                        <li>third</li>
-                        <li>third</li>
-                    </ul>
-                </li>
-            </ul>
+          <ul>
+            <li>third</li>
+            <li>third</li>
+            <li>third</li>
+            <li>third</li>
+            <li>third</li>
+          </ul>
         </li>
-        <li>first</li>
-        <li>first</li>
-        <li>first</li>
-        <li>first</li>
-    </ul>
+      </ul>
+    </li>
+    <li>first</li>
+    <li>first</li>
+    <li>first</li>
+    <li>first</li>
+  </ul>
 </div>
 
-<h4>3) color every even number as red and odd a green(using only two selectors)/</h4>
-<ul id='evenodd'>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
+<h4>
+  3) color every even number as red and odd a green(using only two selectors)/
+</h4>
+<ul id="evenodd">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
 </ul>
 
 <h4>4) color the last element in of every list as red</h4>
-<div id='lastselector'>
-    <ul>
+<div id="lastselector">
+  <ul>
+    <li>
+      <ul>
+        <li>item2</li>
+        <li>item2</li>
+        <li>item2</li>
+      </ul>
+    </li>
+    <li>item1</li>
+    <li>item1</li>
+    <li>
+      <ul>
         <li>
-            <ul>
-                <li>item2</li>
-                <li>item2</li>
-                <li>item2</li>
-            </ul>
+          <ul>
+            <li>item4</li>
+            <li>item4</li>
+            <li>item4</li>
+            <li>item4</li>
+            <li>item4</li>
+            <li>item4</li>
+            <li>
+              <ul>
+                <li>item5</li>
+                <li>item5</li>
+                <li>item5</li>
+                <li>item5</li>
+                <li>item5</li>
+              </ul>
+            </li>
+            <li>item4</li>
+            <li>item4</li>
+            <li>item4</li>
+          </ul>
         </li>
-        <li>item1</li>
-        <li>item1</li>
-        <li>
-            <ul>
-                <li>
-                    <ul>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>
-                            <ul>
-                                <li>item5</li>
-                                <li>item5</li>
-                                <li>item5</li>
-                                <li>item5</li>
-                                <li>item5</li>
-                            </ul>
-                        </li>
-                        <li>item4</li>
-                        <li>item4</li>
-                        <li>item4</li>
-                    </ul>
-                </li>
-                <li>item3</li>
-            </ul>
-        </li>
-        <li>item1</li>
-        <li>item1</li>
-        <li>item1</li>
-    </ul>
+        <li>item3</li>
+      </ul>
+    </li>
+    <li>item1</li>
+    <li>item1</li>
+    <li>item1</li>
+  </ul>
 </div>
 
-<h5>5) change color of link red after hovering, remove default style of link, during clicking change color to blue</h5>
+<h5>
+  5) change color of link red after hovering, remove default style of link,
+  during clicking change color to blue
+</h5>
 <a>change me</a>
-

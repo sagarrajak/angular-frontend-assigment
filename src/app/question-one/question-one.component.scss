@@ -1,0 +1,70 @@
+form {
+  width: 500px;
+  .main-cont {
+    width: 30vw;
+    .input-cont {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8px;
+      label {
+        font-size: 12px;
+        margin: 0;
+        font-weight: 500;
+        color: grey;
+      }
+      input {
+        background: rgb(252, 252, 252);
+        border: 2px solid rgb(209, 209, 209);
+        border-radius: 8px;
+        padding: 5px 8px;
+        outline: none;
+        font-weight: 500;
+        transition: 0.3s ease all;
+        &:hover {
+          border: 2px solid rgb(103, 141, 223);
+        }
+        &:focus {
+          background: rgb(241, 246, 255);
+          border: 2px solid rgb(76, 122, 221);
+        }
+        &.invalid {
+          background: rgb(255, 240, 240);
+          border: 2px solid rgb(255, 141, 141);
+        }
+        &.valid {
+          background: rgb(241, 255, 240);
+          border: 2px solid rgb(94, 189, 88);
+        }
+      }
+      .error-msg {
+        color: rgb(255, 141, 141);
+        margin-bottom: 2px;
+        font-size: 14px;
+      }
+    }
+    button {
+      width: 100%;
+      background: black;
+      color: white;
+      border: 2px solid black;
+      padding: 4px 2px;
+      border-radius: 8px;
+      font-weight: 500;
+      margin: 8px 0;
+      cursor: pointer;
+      transition: 0.3s ease all;
+      &:hover {
+        transform: scale(0.99);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    .main-cont {
+      width: 100%;
+    }
+  }
+}

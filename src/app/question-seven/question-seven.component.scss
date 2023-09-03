@@ -1,15 +1,60 @@
 #colorchilderen {
-    // overider this for second problem 
+  // overider this for second problem
+  & div {
+    color: green;
+  }
+  & div div div {
+    color: red;
+  }
+  & div div div div {
+    color: yellow;
+  }
 }
 
 #bluecolor {
-    // for second problem
+  ul li:nth-child(2) {
+    color: blue;
+  }
 }
 
 #evenodd {
-    // for third problem 
+  li:nth-child(even) {
+    color: red;
+  }
+  li:nth-child(odd) {
+    color: green;
+  }
 }
 
 #lastselector {
-    // for fourth problem 
+  ul li:last-child {
+    color: red;
+  }
+}
+
+a:last-child {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  transition: 0.3s ease all;
+  border: 2px solid rgb(195, 195, 255);
+  &:hover {
+    color: red;
+    border: 2px solid red;
+    background: rgb(253, 202, 202);
+  }
+  &:active {
+    color: blue;
+    border: 2px solid blue;
+    background: rgb(216, 211, 255);
+  }
+}
+
+// I guess 3rd on in html has wrong href(.com) but value is Org2
+a[href="http://example.com"]
+{
+  color: red;
 }
