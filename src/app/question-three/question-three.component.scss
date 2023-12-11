@@ -1,0 +1,92 @@
+.section1 {
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 1000px;
+      height: 1000px;
+      background-color: blue;
+      z-index: -1;
+    }
+  }
+  
+  .child-box {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .arrange1,
+  .arrange2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .arrange1 > div ,
+  .arrange2 > div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .arrange1 > div > div {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .arrange1 > div:nth-child(1) {
+    background-color: red;
+  }
+  
+  .arrange1 > div:nth-child(2){
+    background-color: green;
+  }
+  
+  .arrange1 > div:nth-child(3) {
+    background-color: darkgoldenrod;
+  }
+  
+ 
+  
+  .arrange2 > div:nth-child(1) {
+    background-color: red;
+  }
+  
+  .arrange2 > div:nth-child(2) {
+    background-color: green;
+  }
+  
+  .arrange2 > div:nth-child(3) {
+    background-color: palevioletred;
+  }
+  
+  .arrange2 > div:nth-child(4) {
+    background-color: yellow;
+  }
+  
+  .arrange2 > div:nth-child(5) {
+    background-color: orange;
+  }
+  
+  .arrange2 > div:nth-child(6) {
+    background-color: purple;
+  }
+  
+  .arrange2 > div:nth-child(7) {
+    background-color: pink;
+  }
+  
+  .arrange2 > div:nth-child(8) {
+    background-color: cyan;
+  }
+  
+  .arrange2 > div:nth-child(9) {
+    background-color: brown;
+  }
+  

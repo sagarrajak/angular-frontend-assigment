@@ -1,0 +1,53 @@
+.part1{
+    p{
+        color:red;
+    }
+    span{
+        color: blue;
+    }
+
+    div p{
+        color:green;
+    }
+    p:last-child{
+        color:yellow;
+    }
+    div span{
+        color: blue;
+    }
+}
+
+.part2{
+    li:nth-child(3n-2){
+        color:red;
+    }
+    li:nth-child(3n-1){
+        color:red;
+    }
+    li:nth-child(3n){
+        color:green
+    }
+}
+.part3{
+    div{
+        color:blue;
+    }
+
+    .iAffectMyNextdiv{
+        color:red ;
+    }
+    .iAffectMyNextdiv +div{
+        color:red ;
+    }
+}
+.part4{
+    a[href="https://www.google.com"]{
+        color: red;
+    }
+    a[href="https://www.google.com"][target="_blank"]{
+        color: yellow;
+    }
+    ul li a:not([href]){
+        color: green;
+    }
+}

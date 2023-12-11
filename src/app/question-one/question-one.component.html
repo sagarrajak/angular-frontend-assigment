@@ -13,44 +13,44 @@
     <h1>simple user details form</h1>
     <br/>
     <label>First name(required)</label>
-    <input type="text"  placeholder="First name" name='firstname' formControlName='firstName'/>
+    <input type="text"  placeholder="First name" name='firstname' formControlName='firstName' [ngClass]="{'red-border': userForm.controls['firstName'].touched && userForm.controls['firstName'].invalid ,'green-border': userForm.controls['firstName'].touched && userForm.controls['firstName'].valid}">
     <ng-container *ngIf="(userForm.controls['firstName'].touched || userForm.controls['firstName'].dirty) && userForm.controls['firstName'].invalid">
-        <p *ngIf="userForm.controls['firstName'].errors.required">Field is required</p>
+        <p *ngIf="userForm.controls['firstName'].errors.required" style="color: red; margin-top: 5px; font-size: 12px;">Field is required</p>
     </ng-container>
     <br/>
     <label>Middle name(required)</label>
-    <input type="text"  placeholder='Middle name' name='middlename' formControlName='lastName'  />
+    <input type="text"  placeholder='Middle name' name='middlename' formControlName='lastName' [ngClass]="{'red-border': userForm.controls['lastName'].touched && userForm.controls['lastName'].invalid ,'green-border': userForm.controls['lastName'].touched && userForm.controls['lastName'].valid}">
     <ng-container *ngIf="(userForm.controls['lastName'].touched || userForm.controls['lastName'].dirty) && userForm.controls['lastName'].invalid">
-        <p *ngIf="userForm.controls['lastName'].errors.required">Field is required</p>
+        <p *ngIf="userForm.controls['lastName'].errors.required" style="color:red; margin-top: 5px; font-size: 12px;">Field is required</p>
     </ng-container>
     <br/>
     <label>Email (required)</label>
-    <input type="text"  placeholder='Email' name='email' formControlName='emailField'  />
+    <input type="text"  placeholder='Email' name='email' formControlName='emailField'  [ngClass]="{'red-border': userForm.controls['emailField'].touched && userForm.controls['emailField'].invalid ,'green-border': userForm.controls['emailField'].touched && userForm.controls['emailField'].valid}">
     <ng-container *ngIf="(userForm.controls['emailField'].touched || userForm.controls['emailField'].dirty) && userForm.controls['emailField'].invalid">
         <p *ngIf="userForm.controls['emailField'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['emailField'].errors.email">Invalid email address</p>
+        <p *ngIf="userForm.controls['emailField'].errors.email" style="color:red; margin-top: 5px; font-size: 12px;">Invalid email address</p>
     </ng-container>
     <br/>
     <label>Age(required)</label>
-    <input type="text"  placeholder='age' name='age' formControlName='ageField' />
+    <input type="text"  placeholder='age' name='age' formControlName='ageField' [ngClass]="{'red-border': userForm.controls['ageField'].touched && userForm.controls['ageField'].invalid ,'green-border': userForm.controls['ageField'].touched && userForm.controls['ageField'].valid}">
     <ng-container *ngIf="(userForm.controls['ageField'].touched || userForm.controls['ageField'].dirty) && userForm.controls['ageField'].invalid">
-        <p *ngIf="userForm.controls['ageField'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['ageField'].errors.min">Minimum age is 18</p>
-        <p *ngIf="userForm.controls['ageField'].errors.max">Maximum age is 30</p>
+        <p *ngIf="userForm.controls['ageField'].errors.required" style="color:red; margin-top: 5px; font-size: 12px;">Field is required</p>
+        <p *ngIf="userForm.controls['ageField'].errors.min" style="color:red; margin-top: 5px; font-size: 12px;">Minimum age is 18</p>
+        <p *ngIf="userForm.controls['ageField'].errors.max" style="color:red; margin-top: 5px; font-size: 12px;">Maximum age is 30</p>
     </ng-container>
     <br/>
     <label>Address(required)</label>
-    <input type="text"  placeholder="Adress1" name='address1' formControlName='address1'/>
+    <input type="text"  placeholder="Adress1" name='address1' formControlName='address1'[ngClass]="{'red-border': userForm.controls['address1'].touched && userForm.controls['address1'].invalid ,'green-border': userForm.controls['address1'].touched && userForm.controls['address1'].valid}">
     <ng-container *ngIf="(userForm.controls['address1'].touched || userForm.controls['address1'].dirty) && userForm.controls['address1'].invalid">
-        <p *ngIf="userForm.controls['address1'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['address1'].errors.maxlength">Max length is 10</p>
+        <p *ngIf="userForm.controls['address1'].errors.required" style="color:red; margin-top: 5px; font-size: 12px;">Field is required</p>
+        <p *ngIf="userForm.controls['address1'].errors.maxlength" style="color:red; margin-top: 5px; font-size: 12px;">Max length is 10</p>
     </ng-container>
     <br>
     <label>Address2</label>
-    <input type="text"  placeholder="Adress2" name='address2' />
+    <input type="text"  placeholder="Adress2" name='address2' formControlName='address2' [ngClass]="{'green-border2': userForm.controls['address2'].touched && userForm.controls['address2'].valid}">
     <br/>
     <label>Address3</label>
-    <input type="text"  placeholder="Adress3" name='address3'  />
+    <input type="text"  placeholder="Adress3" name='address3' formControlName='address3' [ngClass]="{'green-border2': userForm.controls['address3'].touched && userForm.controls['address3'].valid}">
     <br/>
     <button type="submit">submit</button>
 </form>
