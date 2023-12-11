@@ -1,3 +1,56 @@
 .t{
   background: red;
 }
+
+.t.t1{
+  opacity: 0;
+}
+.t.t2{
+  display: none;
+}
+.t.t3{
+  visibility: hidden;
+}
+.t.t4{
+  transform: scale(0);
+}
+.t.t5{
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+.t.t6{
+  height: 0;
+  overflow: hidden;
+}
+.t.t7{
+  width: 0;
+  overflow: hidden;
+}
+.t.t8 {
+  width: 0;
+  overflow: hidden;
+}
+
+
+
+
+.t.t9 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+
+.t.t10 {
+  max-width: 0;
+  overflow: hidden;
+}
+
+.t.t11{
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+.t.t12 {
+  font-size: 0;
+}
+

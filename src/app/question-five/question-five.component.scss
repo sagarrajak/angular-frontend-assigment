@@ -1,0 +1,60 @@
+.container {
+    font-size: 16px;
+    transition: color 0.5s; /* Smooth transition for color change */
+  }
+  @media screen and (max-width: 100px) {
+    .container {
+      color: red;
+    }
+  }
+  
+  @media screen and (min-width: 101px) and (max-width: 200px) {
+    .container {
+      color: blue;
+    }
+  }
+  @media screen and (min-width: 201px) and (max-width: 300px) {
+    .container {
+      color: green;
+    }
+  }
+  @media screen and (min-width: 301px) and (max-width: 400px) {
+    .container {
+      color: yellow;
+    }
+  }
+  @media screen and (min-width: 401px) and (max-width: 500px) {
+    .container {
+      color: orange;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 600px) {
+    .container {
+      color: purple;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 700px) {
+    .container {
+      color: red;
+    }
+  }
+  @media screen and (min-width: 701px) and (max-width: 800px) {
+    .container {
+      color: blue;
+    }
+  }
+  @media screen and (min-width: 801px) and (max-width: 900px) {
+    .container {
+      color: orange;
+    }
+  }
+  @media screen and (min-width: 901px)  {
+    .container {
+      color: gray;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 700px) {
+    .container {
+      color: red;
+    }
+  }
