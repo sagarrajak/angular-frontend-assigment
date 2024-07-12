@@ -1,56 +1,56 @@
-<!-- work on angular form -->
-<h2>Simple form assigment</h2>
+<!--Work on angular form-->>
+<h2>Simple Form Assignment</h2>
 <ol>
-  <li> Style the form and make it more beautifull form.</li>
-  <li> Make it responsive.</li>
-  <li> Form field should turn red in case of empty entry for required field(Make a red border with required message in red color below form field).</li>
-  <li> If the field is not required simply turn it green after user either fill the field or visit the field.</li>
-  <li> After user fill the form field must turn green (a green border;)</li>
-  <li> Do not use external css library </li>
-  <li> You can edit html file (for only this question)</li>
+  <li>Style the form and make it more beautiful.</li>
+  <li>Make it responsive.</li>
+  <li>Form field should turn red in case of empty entry for required field (make a red border with required message in red color below the form field).</li>
+  <li>If the field is not required, simply turn it green after the user either fills the field or visits the field.</li>
+  <li>After the user fills the form field, it must turn green (a green border).</li>
+  <li>Do not use external CSS library.</li>
+  <li>You can edit the HTML file (for only this question).</li>
 </ol>
-<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(testForm)'>
-    <h1>simple user details form</h1>
+<form [formGroup]='userForm' (ngSubmit)='callAfterSubmit(userForm)'>
+    <h1>Simple User Details Form</h1>
     <br/>
-    <label>First name(required)</label>
-    <input type="text"  placeholder="First name" name='firstname' formControlName='firstName'/>
+    <label>First name (required)</label>
+    <input type="text" placeholder="First name" name='firstname' formControlName='firstName' [ngClass]="getFieldCssClass('firstName')" />
     <ng-container *ngIf="(userForm.controls['firstName'].touched || userForm.controls['firstName'].dirty) && userForm.controls['firstName'].invalid">
-        <p *ngIf="userForm.controls['firstName'].errors.required">Field is required</p>
+        <p class="error-message" *ngIf="userForm.controls['firstName'].errors.required">Field is required</p>
     </ng-container>
     <br/>
-    <label>Middle name(required)</label>
-    <input type="text"  placeholder='Middle name' name='middlename' formControlName='lastName'  />
+    <label>Middle name (required)</label>
+    <input type="text" placeholder='Middle name' name='middlename' formControlName='lastName' [ngClass]="getFieldCssClass('lastName')" />
     <ng-container *ngIf="(userForm.controls['lastName'].touched || userForm.controls['lastName'].dirty) && userForm.controls['lastName'].invalid">
-        <p *ngIf="userForm.controls['lastName'].errors.required">Field is required</p>
+        <p class="error-message" *ngIf="userForm.controls['lastName'].errors.required">Field is required</p>
     </ng-container>
     <br/>
     <label>Email (required)</label>
-    <input type="text"  placeholder='Email' name='email' formControlName='emailField'  />
+    <input type="text" placeholder='Email' name='email' formControlName='emailField' [ngClass]="getFieldCssClass('emailField')" />
     <ng-container *ngIf="(userForm.controls['emailField'].touched || userForm.controls['emailField'].dirty) && userForm.controls['emailField'].invalid">
-        <p *ngIf="userForm.controls['emailField'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['emailField'].errors.email">Invalid email address</p>
+        <p class="error-message" *ngIf="userForm.controls['emailField'].errors.required">Field is required</p>
+        <p class="error-message" *ngIf="userForm.controls['emailField'].errors.email">Invalid email address</p>
     </ng-container>
     <br/>
-    <label>Age(required)</label>
-    <input type="text"  placeholder='age' name='age' formControlName='ageField' />
+    <label>Age (required)</label>
+    <input type="text" placeholder='Age' name='age' formControlName='ageField' [ngClass]="getFieldCssClass('ageField')" />
     <ng-container *ngIf="(userForm.controls['ageField'].touched || userForm.controls['ageField'].dirty) && userForm.controls['ageField'].invalid">
-        <p *ngIf="userForm.controls['ageField'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['ageField'].errors.min">Minimum age is 18</p>
-        <p *ngIf="userForm.controls['ageField'].errors.max">Maximum age is 30</p>
+        <p class="error-message" *ngIf="userForm.controls['ageField'].errors.required">Field is required</p>
+        <p class="error-message" *ngIf="userForm.controls['ageField'].errors.min">Minimum age is 18</p>
+        <p class="error-message" *ngIf="userForm.controls['ageField'].errors.max">Maximum age is 30</p>
     </ng-container>
     <br/>
-    <label>Address(required)</label>
-    <input type="text"  placeholder="Adress1" name='address1' formControlName='address1'/>
+    <label>Address (required)</label>
+    <input type="text" placeholder="Address1" name='address1' formControlName='address1' [ngClass]="getFieldCssClass('address1')" />
     <ng-container *ngIf="(userForm.controls['address1'].touched || userForm.controls['address1'].dirty) && userForm.controls['address1'].invalid">
-        <p *ngIf="userForm.controls['address1'].errors.required">Field is required</p>
-        <p *ngIf="userForm.controls['address1'].errors.maxlength">Max length is 10</p>
+        <p class="error-message" *ngIf="userForm.controls['address1'].errors.required">Field is required</p>
+        <p class="error-message" *ngIf="userForm.controls['address1'].errors.maxlength">Max length is 10</p>
     </ng-container>
-    <br>
+    <br/>
     <label>Address2</label>
-    <input type="text"  placeholder="Adress2" name='address2' />
+    <input type="text" placeholder="Address2" name='address2' formControlName='address2' [ngClass]="getFieldCssClass('address2')" />
     <br/>
     <label>Address3</label>
-    <input type="text"  placeholder="Adress3" name='address3'  />
+    <input type="text" placeholder="Address3" name='address3' formControlName='address3' [ngClass]="getFieldCssClass('address3')" />
     <br/>
-    <button type="submit">submit</button>
+    <button type="submit">Submit</button>
 </form>

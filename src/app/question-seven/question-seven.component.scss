@@ -1,15 +1,58 @@
-#colorchilderen {
-    // overider this for second problem 
-}
-
-#bluecolor {
-    // for second problem
-}
-
-#evenodd {
-    // for third problem 
-}
-
-#lastselector {
-    // for fourth problem 
-}
+// 1) Make every .com link red color using only one selector (either class or id)
+[id^="link"][href*=".com"] {
+    color: red;
+  }
+  
+  // 2) Use child or descendant selector for coloring text, as per mention.
+  #colorchilderen > div > div:nth-child(1) div {
+    color: red;
+  }
+  
+  #colorchilderen > div > div:nth-child(2) > div > div {
+    color: yellow;
+  }
+  
+  #colorchilderen > div:nth-child(2),
+  #colorchilderen > div:nth-child(3),
+  #colorchilderen > div:nth-child(4),
+  #colorchilderen > div:nth-child(5) {
+    color: green;
+  }
+  
+  // 3) Make second child of every list as blue color.
+  #bluecolor ul > li:nth-child(2) {
+    color: blue;
+  }
+  
+  // 4) Color every even number as red and odd as green (using only two selectors).
+  #evenodd li:nth-child(odd) {
+    color: green;
+  }
+  
+  #evenodd li:nth-child(even) {
+    color: red;
+  }
+  
+  // 5) Color the last element of every list as red.
+  #lastselector ul > li:last-child {
+    color: red;
+  }
+  
+  // 6) Change color of link to red after hovering, remove default style of link, during clicking change color to blue.
+  a {
+    color: inherit;
+    text-decoration: none;
+  
+    &:hover {
+      color: red;
+    }
+  
+    // &:active {
+    //   color: blue;
+    // }
+  
+    &:visited {
+      color: blue!important;
+    }
+  }
+  

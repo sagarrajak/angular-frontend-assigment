@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 declare interface UserForm {
   firstName: string;
@@ -16,7 +16,6 @@ declare interface UserForm {
   styleUrls: ['./question-one.component.scss']
 })
 export class QuestionOneComponent {
-
   public userForm: FormGroup;
 
   constructor() { 
@@ -31,10 +30,20 @@ export class QuestionOneComponent {
     });
   }
 
-  callAfterSubmit(form: NgForm) {
+  callAfterSubmit(form: FormGroup) {
     console.log('value', 'valid', form.value, form.valid);
   }
-
-
-
+  getFieldCssClass(fieldName: string): string {
+    const field = this.userForm.get(fieldName);
+    if (field && (field.touched || field.dirty)) {
+      if (field.invalid && field.errors && field.errors.required) {
+        return 'is-invalid';
+      } else if (field.valid) {
+        return 'is-valid';
+      }
+    }
+    return '';
+  }
+  
+  
 }

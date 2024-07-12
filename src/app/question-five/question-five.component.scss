@@ -1,0 +1,44 @@
+.color-index li {
+    color: black; // Default color
+  
+    @media (max-width: 100px) {
+      color: red;
+    }
+  
+    @media (min-width: 101px) and (max-width: 200px) {
+      color: blue;
+    }
+  
+    @media (min-width: 201px) and (max-width: 300px) {
+      color: green;
+    }
+  
+    @media (min-width: 301px) and (max-width: 400px) {
+      color: yellow;
+    }
+  
+    @media (min-width: 401px) and (max-width: 500px) {
+      color: orange;
+    }
+  
+    @media (min-width: 501px) and (max-width: 600px) {
+      color: purple;
+    }
+  
+    @media (min-width: 601px) and (max-width: 700px) {
+      color: red;
+    }
+  
+    @media (min-width: 701px) and (max-width: 800px) {
+      color: blue;
+    }
+  
+    @media (min-width: 801px) and (max-width: 900px) {
+      color: orange;
+    }
+  
+    @media (min-width: 901px) {
+      color: grey;
+    }
+  }
+  
