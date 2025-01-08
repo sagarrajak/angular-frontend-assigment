@@ -1,3 +1,88 @@
 .t{
   background: red;
 }
+
+/* Technique 1: Using display: none */
+.t1 {
+  display: none;
+}
+
+/* Technique 2: Using visibility: hidden */
+.t2 {
+  visibility: hidden;
+}
+
+/* Technique 3: Using opacity: 0 */
+.t3 {
+  opacity: 0;
+}
+
+/* Technique 4: Using position off-screen */
+.t4 {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Technique 5: Using width and height of 0 */
+.t5 {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Technique 6: Using clip-path to clip the element */
+.t6 {
+  clip-path: inset(50%);
+}
+
+/* Technique 7: Using transform to move the element off-screen */
+.t7 {
+  transform: translateX(-9999px);
+}
+
+/* Technique 8: Using z-index to hide behind other elements */
+.t8 {
+   height: 0;
+   overflow: hidden;
+}
+
+/* Technique 9: Using max-height: 0 and overflow hidden */
+.t9 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Technique 10: Using padding 0 */
+.t10 {
+  width: 0;
+  overflow: hidden;
+}
+
+/* Technique 11: Using negative margin */
+.t11 {
+  margin-top: -9999px;
+}
+
+/* Technique 12: Using filter: blur to make invisible */
+.t12 {
+  filter: blur(10px);
+}
+
+/* Technique 13: Using display: flex with an empty flex container */
+.t13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+}
+
+/* Technique 14: Using background color with the same as the page background */
+.t14 {
+  background-color: white; /* Assuming white as the page background */
+  color: white;
+}
+
+/* Technique 15: Using transform scale(0) to shrink the element */
+.t15 {
+  transform: scale(0);
+}

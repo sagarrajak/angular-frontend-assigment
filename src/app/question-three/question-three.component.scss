@@ -1,0 +1,44 @@
+/* Container styling for the parent divs */
+.arrange1, .arrange2 {
+  width: 1000px;       /* Set the size of the parent box */
+  height: 1000px;      /* Set the size of the parent box */
+  background-color: blue;  /* Big blue background for the parent divs */
+  display: grid;       /* Use grid layout */
+  grid-template-columns: repeat(3, 100px); /* Create three columns */
+  grid-template-rows: repeat(3, 100px);    /* Create three rows */
+  gap: 10px;           /* Add space between child divs */
+  margin: 10px;        /* Add margin around the parent divs */
+
+}
+
+/* Styling for each child div */
+.arrange1 div, .arrange2 div {
+  width: 100px;       /* Size of each child div */
+  height: 100px;      /* Size of each child div */
+  display: flex;      /* Align text centrally */
+  justify-content: center;  /* Horizontally center the text */
+  align-items: center;     /* Vertically center the text */
+  color: white;       /* White text color */
+  font-size: 14px;    /* Font size for the text */
+  border-radius: 5px; /* Rounded corners for child divs */
+}
+
+/* Assigning different background colors for each child div */
+.arrange1 div:nth-child(1), .arrange2 div:nth-child(1) { background-color: red; }
+.arrange1 div:nth-child(2), .arrange2 div:nth-child(2) { background-color: green; }
+.arrange1 div:nth-child(3), .arrange2 div:nth-child(3) { background-color: yellow; }
+.arrange1 div:nth-child(4), .arrange2 div:nth-child(4) { background-color: purple; }
+.arrange1 div:nth-child(5), .arrange2 div:nth-child(5) { background-color: orange; }
+.arrange1 div:nth-child(6), .arrange2 div:nth-child(6) { background-color: pink; }
+.arrange1 div:nth-child(7), .arrange2 div:nth-child(7) { background-color: teal; }
+.arrange1 div:nth-child(8), .arrange2 div:nth-child(8) { background-color: brown; }
+.arrange1 div:nth-child(9), .arrange2 div:nth-child(9) { background-color: violet; }
+
+/* Additional space for the parent divs */
+.arrange1 {
+  margin-top: 20px;
+}
+
+.arrange2 {
+  margin-top: 20px;
+}

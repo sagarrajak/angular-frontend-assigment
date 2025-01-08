@@ -1,0 +1,116 @@
+.part1 {
+  p:nth-of-type(1) {
+    color: red;  // First p - red
+  }
+
+  span:nth-of-type(1) {
+    color: blue;  // First span - blue
+  }
+
+  div > p:nth-of-type(1) {
+    color: green;  // First p inside div - green
+  }
+
+  div > span:nth-of-type(1) {
+    color: blue;  // First span inside div - blue
+  }
+
+  p:nth-of-type(2) {
+    color: yellow;  // Second p - yellow
+  }
+}
+
+
+.part2 {
+  li:nth-of-type(1),
+  li:nth-of-type(2),
+  li:nth-of-type(4),
+  li:nth-of-type(5),
+  li:nth-of-type(7),
+  li:nth-of-type(8),
+  li:nth-of-type(10) {
+    color: red;  // Red for specific li elements
+  }
+
+  li:nth-of-type(3),
+  li:nth-of-type(6),
+  li:nth-of-type(9) {
+    color: green;  // Green for other specific li elements
+  }
+}
+
+
+.part3 {
+  div:nth-of-type(1),
+  div:nth-of-type(2),
+  div:nth-of-type(3),
+  div:nth-of-type(4),
+  div:nth-of-type(5),
+  div:nth-of-type(9),
+  div:nth-of-type(10) {
+    color: blue;  // Blue for the first, second, third, fourth, fifth, ninth, tenth div
+  }
+
+  div:nth-of-type(6) {
+    color: red;  // Sixth div - red (Poison effect)
+  }
+
+  div:nth-of-type(7),
+  div:nth-of-type(8) {
+    color: red;  // Seventh and eighth div - red (Poison effect)
+  }
+
+  div:nth-of-type(11),
+  div:nth-of-type(12) {
+    color: blue;  // Eleventh and twelfth div - blue (Safe)
+  }
+
+  span:nth-of-type(1), :nth-of-type(3){
+    color: red;
+  }
+}
+
+.part4 {
+  div:nth-of-type(1){
+    a{
+      color: red($color: #000000);
+    }
+  }
+  div:nth-of-type(2){
+    a{
+      color: yellow;
+    }
+
+  }
+
+  ul:nth-of-type(1){
+    li:nth-of-type(1){
+      a{
+        color: yellow;
+      }
+
+    }
+    li:nth-of-type(2){
+      a{
+        color: green;
+
+      }
+    }
+    li:nth-of-type(3){
+      a{
+        color: red;
+
+      }
+    }
+  }
+
+  p:nth-of-type(1){
+    a:nth-of-type(1){
+     color: yellow;
+    }
+  }
+
+  a:nth-of-type(1){
+    color: red;
+  }
+}

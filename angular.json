@@ -9,9 +9,7 @@
       "projectType": "application",
       "prefix": "app",
       "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
+        "@schematics/angular:component": {}
       },
       "architect": {
         "build": {
@@ -43,7 +41,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -135,6 +132,5 @@
         }
       }
     }
-  },
-  "defaultProject": "angular-frontend-assigment"
+  }
 }

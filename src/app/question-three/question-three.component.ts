@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone:true,
   selector: 'app-question-three',
   templateUrl: './question-three.component.html',
   styleUrls: ['./question-three.component.scss']

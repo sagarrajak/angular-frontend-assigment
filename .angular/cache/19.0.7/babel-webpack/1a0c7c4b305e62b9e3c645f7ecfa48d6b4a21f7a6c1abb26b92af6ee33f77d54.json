@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { bootstrapApplication } from '@angular/platform-browser';\nimport { AppComponent } from './app/app.component'; // Import your standalone component\n// Bootstrap the standalone AppComponent\nbootstrapApplication(AppComponent).catch(err => console.error(err));","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

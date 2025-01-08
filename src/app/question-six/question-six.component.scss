@@ -5,6 +5,49 @@
     position: absolute;
     color: white;
 
-    //overide here 
+    //overide here
 }
 
+
+/* Style for the main red box */
+#main {
+  position: relative; /* This ensures the absolute positioning works relative to this container */
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+/* Style for the corner boxes */
+#main div {
+  position: absolute; /* Position them absolutely within the container */
+  width: fit-content;
+  height: 50px;
+  text-align: center;
+  line-height: 50px; /* Center text vertically */
+  font-weight: bold;
+  color: white;
+}
+
+#main div:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: pink;
+}
+
+#main div:nth-child(2) {
+  top: 0;
+  right: 0;
+  background-color: blue;
+}
+
+#main div:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+
+#main div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+}

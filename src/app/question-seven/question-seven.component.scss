@@ -1,15 +1,67 @@
 #colorchilderen {
-    // overider this for second problem 
+
+
+    // overider this for second problem
+    div:nth-of-type(1){
+      div:nth-of-type(1){
+        div{
+          color: red;
+        }
+      }
+    }
+
+    div:nth-of-type(2){
+
+      div:nth-of-type(1){
+        div{
+          color: yellow;
+        }
+      }
+    }
+   /* This will target all children except the first two */
+
+   div{
+    color: green;
+   }
 }
 
-#bluecolor {
-    // for second problem
+a[href*=".com"] {
+  color: red;
+
 }
 
-#evenodd {
-    // for third problem 
+
+#bluecolor ul li:nth-child(2) {
+  color: blue;
 }
 
-#lastselector {
-    // for fourth problem 
+#evenodd{
+  li:nth-child(even) {
+    color: red;  /* Even number (2, 4, 6, etc.) */
+  }
+  li:nth-child(odd) {
+    color: green; /* Odd number (1, 3, 5, etc.) */
+  }
+}
+
+
+
+
+#lastselector ul li:last-child{
+  color: red;
+    // for fourth problem
+}
+
+
+/* 1) Make every .com link red color using only one selector (attribute selector) */
+
+
+a:hover {
+  color: red !important;
+  cursor: pointer;
+}
+
+/* Change color on active (clicked) */
+a:active {
+  color: blue!important;
 }

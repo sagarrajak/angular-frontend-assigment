@@ -1,0 +1,65 @@
+/* Default color */
+.text-center {
+  color: red; /* Default color for smaller screens */
+}
+
+/* Media Queries for responsive text color based on width */
+@media (min-width: 0px) and (max-width: 100px) {
+  .text-center {
+    color: red;
+  }
+}
+
+@media (min-width: 101px) and (max-width: 200px) {
+  .text-center {
+    color: blue;
+  }
+}
+
+@media (min-width: 201px) and (max-width: 300px) {
+  .text-center {
+    color: green;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 400px) {
+  .text-center {
+    color: yellow;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .text-center {
+    color: orange;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .text-center {
+    color: purple;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .text-center {
+    color: red;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  .text-center {
+    color: blue;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+  .text-center {
+    color: orange;
+  }
+}
+
+@media (min-width: 901px) {
+  .text-center {
+    color: grey;
+  }
+}
