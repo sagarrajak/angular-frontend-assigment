@@ -1,3 +1,86 @@
 .t{
   background: red;
 }
+
+/* 1. Using `display: none;` */
+.t.t1 {
+  display: none;
+}
+
+/* 2. Using `visibility: hidden;` */
+.t.t2 {
+  visibility: hidden;
+}
+
+/* 3. Using `opacity: 0;` */
+.t.t3 {
+  opacity: 0;
+}
+
+/* 4. Using `position: absolute;` and moving it off-screen */
+.t.t4 {
+  position: absolute;
+  left: -9999px;
+}
+
+/* 5. Using `height: 0` */
+.t.t5 {
+  height: 0;
+  overflow: hidden;
+}
+
+/* 6. Using `width: 0` */
+.t.t6 {
+  width: 0;
+  overflow: hidden;
+}
+
+/* 7. Using `clip-path` */
+.t.t7 {
+  clip-path: inset(50%);
+}
+
+/* 8. Using `transform: scale(0)` */
+.t.t8 {
+  transform: scale(0);
+}
+
+/* 9. Using `z-index` with `position: absolute` */
+.t.t9 {
+  position: absolute;
+  z-index: -1;
+}
+
+/* 10. Using `max-height: 0` */
+.t.t10 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* 11. Using `visibility: collapse;` (works with table rows and columns) */
+.t.t11 {
+  visibility: collapse;
+}
+
+/* 12. Using `position: fixed` and placing it off-screen */
+.t.t12 {
+  position: fixed;
+  top: -9999px;
+}
+
+/* 13. Using `font-size: 0` */
+.t.t13 {
+  font-size: 0;
+}
+
+/* 14. Using `filter: opacity(0)` */
+.t.t14 {
+  filter: opacity(0);
+}
+
+/* 15. Using `overflow: hidden;` to hide the content */
+.t.t15 {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}

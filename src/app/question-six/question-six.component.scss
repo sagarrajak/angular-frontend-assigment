@@ -8,3 +8,39 @@
     //overide here 
 }
 
+
+#main > div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+}
+
+#main > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+#main > div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+#main > div:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}

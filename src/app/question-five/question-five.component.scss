@@ -1,0 +1,60 @@
+/* Default color */
+.text-center {
+    color: red;
+  }
+  
+  /* Media Queries for different screen widths */
+  @media (min-width: 101px) and (max-width: 200px) {
+    .text-center {
+      color: blue;
+    }
+  }
+  
+  @media (min-width: 201px) and (max-width: 300px) {
+    .text-center {
+      color: green;
+    }
+  }
+  
+  @media (min-width: 301px) and (max-width: 400px) {
+    .text-center {
+      color: yellow;
+    }
+  }
+  
+  @media (min-width: 401px) and (max-width: 500px) {
+    .text-center {
+      color: orange;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 600px) {
+    .text-center {
+      color: purple;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 700px) {
+    .text-center {
+      color: red;
+    }
+  }
+  
+  @media (min-width: 701px) and (max-width: 800px) {
+    .text-center {
+      color: blue;
+    }
+  }
+  
+  @media (min-width: 801px) and (max-width: 900px) {
+    .text-center {
+      color: orange;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .text-center {
+      color: grey;
+    }
+  }
+  
