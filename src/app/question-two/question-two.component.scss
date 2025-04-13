@@ -1,0 +1,60 @@
+/* PART 1 */
+.part1 {
+    > p:first-of-type {
+      color: red;
+    }
+  
+    > span {
+      color: blue;
+    }
+  
+    > div > p {
+      color: green;
+    }
+  
+    > div > span {
+      color: blue;
+    }
+  
+    > p:last-of-type {
+      color: yellow;
+    }
+  }
+  
+  /* PART 2 */
+  .part2 {
+    ol > li:nth-child(3n) {
+      color: green;
+    }
+  
+    ol > li:not(:nth-child(3n)) {
+      color: red;
+    }
+  }
+  
+  /* PART 3 */
+  .part3 {
+    > div {
+      color: blue;
+    }
+  
+    .iAffectMyNextdiv + div {
+      color: red;
+    }
+  }
+  
+  /* PART 4 */
+  .part4 {
+    a[href="https://www.google.com"]:not([target]) {
+      color: red;
+    }
+  
+    a[href="https://www.google.com"][target="_blank"] {
+      color: yellow;
+    }
+  
+    a:not([href]) {
+      color: green;
+    }
+  }
+  

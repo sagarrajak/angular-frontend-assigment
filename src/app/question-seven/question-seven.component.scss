@@ -1,15 +1,52 @@
-#colorchilderen {
-    // overider this for second problem 
+/* 1. Select all links that contain '.com' in the href and make them red */
+a[href*=".com"]:not([href="http://example.org"]) {
+    color: red;
+}
+/* 2. Color specific child elements */
+#colorchilderen > div > div > div {
+    color: red; /* Selects all "red" text inside the innermost div */
 }
 
-#bluecolor {
-    // for second problem
+#colorchilderen > div > div > div > div {
+    color: yellow; /* Selects "yellow" text inside nested div */
+}
+/* Selects "green" text inside nested div */
+#colorchilderen > div {
+    color: green;
 }
 
-#evenodd {
-    // for third problem 
+
+/* 2. Select the second child of every list */
+#bluecolor ul li:nth-child(2) {
+    color: blue;
 }
 
-#lastselector {
-    // for fourth problem 
+
+/* 3. Color every even number red */
+#evenodd li:nth-child(even) {
+    color: red;
+}
+
+/* Color every odd number green */
+#evenodd li:nth-child(odd) {
+    color: green;
+}
+
+/* 4. Select the last item of each list and color it red */
+#lastselector ul li:last-child {
+    color: red;
+}
+
+// 5.change color of link red after hovering, remove default style of link, during clicking change color to blue
+a {
+    text-decoration: none; /* Remove default underline */
+    color: black; /* Default color */
+}
+
+a:hover {
+    color: red; /* Color changes to red on hover */
+}
+
+a:active {
+    color: blue; /* Color changes to blue when clicked */
 }

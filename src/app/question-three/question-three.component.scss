@@ -1,0 +1,157 @@
+.section1 {
+  position: relative;
+  width: 1000px;
+  padding-top: 50px;
+  padding-bottom: 1000px; /* Add space for the blue box */
+}
+
+.section1::after {
+  content: "";
+  position: absolute;
+  top: 200px; /* Move blue box down so text is not overlapped */
+  left: 0;
+  width: 1000px;
+  height: 1000px;
+  background-color: blue;
+  z-index: 0;
+}
+
+
+/* Style for all the child divs (small colored boxes) */
+.section1 > div > div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;  /* Horizontally center text */
+  align-items: center;      /* Vertically center text */
+  z-index: 1; /* Ensure they are above the blue background */
+  color: white;  /* Text color */
+}
+
+/* Top Row */
+.section1 > .arrange1 div:nth-child(1) {
+  top: 200px;
+  left: 0;
+  background-color: red;
+}
+.section1 > .arrange1 div:nth-child(2) {
+  top: 200px;
+  left: 450px;
+  background-color: green;
+}
+.section1 > .arrange1 div:nth-child(3) {
+  top: 200px;
+  right: 0;
+  background-color: yellow;
+}
+
+/* Mid Row */
+.section1 > div:nth-of-type(2) div:nth-child(1) {
+  top: 650px;
+  left: 0;
+  background-color: orange;
+}
+.section1 > div:nth-of-type(2) div:nth-child(2) {
+  top: 650px;
+  left: 450px;
+  background-color: pink;
+}
+.section1 > div:nth-of-type(2) div:nth-child(3) {
+  top: 650px;
+  right: 0;
+  background-color: cyan;
+}
+
+/* Bottom Row */
+.section1 > div:nth-of-type(3) div:nth-child(1) {
+  top: 1100px;   /* Adjusted to align with the bottom of the blue box */
+  left: 0;
+  background-color: lime;
+  text-align: center;
+}
+.section1 > div:nth-of-type(3) div:nth-child(2) {
+  top: 1100px;   /* Adjusted to align with the bottom of the blue box */
+  left: 450px;
+  background-color: violet;
+  text-align: center;
+}
+.section1 > div:nth-of-type(3) div:nth-child(3) {
+  top: 1100px;  /* Adjusted to align with the bottom of the blue box */
+  right: 0;
+  background-color: brown;
+  text-align: center;    
+}
+
+/* Style for the .arrange2 div (blue box containing small boxes) */
+.arrange2 {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  background-color: red;  /* Blue background for the container */
+  z-index: 0;
+  margin-top: 50px;  /* Space between the first blue box and the second one */
+}
+
+/* Style for each child div inside arrange2 (small colored boxes) */
+.arrange2 > div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;  /* Horizontally center the text */
+  align-items: center;      /* Vertically center the text */
+  text-align: center;
+  color: white;  /* Text color */
+}
+
+/* Top Row */
+.arrange2 div:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+.arrange2 div:nth-child(2) {
+  top: 0;
+  left: 450px;
+  background-color: green;
+}
+.arrange2 div:nth-child(3) {
+  top: 0;
+  right: 0;
+  background-color: yellow;
+}
+
+/* Mid Row */
+.arrange2 div:nth-child(4) {
+  top: 450px;
+  left: 0;
+  background-color: orange;
+}
+.arrange2 div:nth-child(5) {
+  top: 450px;
+  left: 450px;
+  background-color: pink;
+}
+.arrange2 div:nth-child(6) {
+  top: 450px;
+  right: 0;
+  background-color: cyan;
+}
+
+/* Bottom Row */
+.arrange2 div:nth-child(7) {
+  bottom: 0;
+  left: 0;
+  background-color: lime;
+}
+.arrange2 div:nth-child(8) {
+  bottom: 0;
+  left: 450px;
+  background-color: violet;
+}
+.arrange2 div:nth-child(9) {
+  bottom: 0;
+  right: 0;
+  background-color: brown;
+}
