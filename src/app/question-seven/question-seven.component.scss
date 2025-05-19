@@ -1,15 +1,51 @@
-#colorchilderen {
-    // overider this for second problem 
+/* 1) Make every .com link red using only one selector (attribute selector) */
+a[href*=".com"] {
+  color: red;
 }
 
-#bluecolor {
-    // for second problem
+/* 2) Color nested elements inside #colorchilderen */
+#colorchilderen > div > div > div > div {
+  color: yellow;
 }
 
-#evenodd {
-    // for third problem 
+#colorchilderen > div ~ div {
+  color: green;
 }
 
-#lastselector {
-    // for fourth problem 
+#colorchilderen div div div div {
+  color: red;
+}
+
+
+/* 3) Make second child of every list blue */
+#bluecolor li:nth-child(2) {
+  color: blue;
+}
+
+/* 4) Even → red, Odd → green (only two selectors) */
+#evenodd li:nth-child(even) {
+  color: red;
+}
+
+#evenodd li:nth-child(odd) {
+  color: green;
+}
+
+/* 5) Last item in every list → red */
+#lastselector li:last-child {
+  color: red;
+}
+
+/* 6) Style single <a>: red on hover, blue on active, remove underline/default */
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: red;
+  }
+
+  &:active {
+    color: blue;
+  }
 }

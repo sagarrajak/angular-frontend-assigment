@@ -1,0 +1,163 @@
+
+/* Main styles for the component */
+
+/* Common styles for both arrangement containers */
+.arrange1, .arrange2 {
+  width: 1000px;
+  height: 1000px;
+  background-color: #0066cc;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Common styles for all child divs */
+.arrange1 div div,
+.arrange2 > div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* ARRANGEMENT 1 - Using absolute positioning */
+/* Fix for parent divs in arrange1 */
+.arrange1 > div {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+/* First row - Top positions */
+.arrange1 > div:nth-child(1) > div:nth-child(1) { /* Top Left */
+  background-color: #ff5733;
+  top: 0;
+  left: 0;
+}
+
+.arrange1 > div:nth-child(1) > div:nth-child(2) { /* Top Center */
+  background-color: #c70039;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrange1 > div:nth-child(1) > div:nth-child(3) { /* Top Right */
+  background-color: #900c3f;
+  top: 0;
+  right: 0;
+}
+
+/* Second row - Mid positions */
+.arrange1 > div:nth-child(2) > div:nth-child(1) { /* Mid Left */
+  background-color: #ffc300;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.arrange1 > div:nth-child(2) > div:nth-child(2) { /* Mid Center */
+  background-color: #daf7a6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrange1 > div:nth-child(2) > div:nth-child(3) { /* Mid Right */
+  background-color: #9fdd06;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Third row - Bottom positions */
+.arrange1 > div:nth-child(3) > div:nth-child(1) { /* Bottom Left */
+  background-color: #6600cc;
+  bottom: 0;
+  left: 0;
+}
+
+.arrange1 > div:nth-child(3) > div:nth-child(2) { /* Bottom Center */
+  background-color: #33cc33;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrange1 > div:nth-child(3) > div:nth-child(3) { /* Bottom Right */
+  background-color: #ff0066;
+  bottom: 0;
+  right: 0;
+}
+
+/* ARRANGEMENT 2 - Using absolute positioning with same colors as arrange1 */
+/* Top positions */
+.arrange2 > div:nth-child(1) { /* Top Left */
+  background-color: #ff5733; /* Same as arrange1 */
+  top: 0;
+  left: 0;
+}
+
+.arrange2 > div:nth-child(2) { /* Top Center */
+  background-color: #c70039; /* Same as arrange1 */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrange2 > div:nth-child(3) { /* Top Right */
+  background-color: #900c3f; /* Same as arrange1 */
+  top: 0;
+  right: 0;
+}
+
+/* Mid positions */
+.arrange2 > div:nth-child(4) { /* Mid Left */
+  background-color: #ffc300; /* Same as arrange1 */
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.arrange2 > div:nth-child(5) { /* Mid Center */
+  background-color: #daf7a6; /* Same as arrange1 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrange2 > div:nth-child(6) { /* Mid Right */
+  background-color: #9fdd06; /* Same as arrange1 */
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Bottom positions */
+.arrange2 > div:nth-child(7) { /* Bottom Left */
+  background-color: #6600cc; /* Same as arrange1 */
+  bottom: 0;
+  left: 0;
+}
+
+.arrange2 > div:nth-child(8) { /* Bottom Center */
+  background-color: #33cc33; /* Same as arrange1 */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrange2 > div:nth-child(9) { /* Bottom Right */
+  background-color: #ff0066; /* Same as arrange1 */
+  bottom: 0;
+  right: 0;
+}
+
+/* Fix for the section1 container to ensure proper spacing */
+.section1 {
+  margin-bottom: 50px;
+}
