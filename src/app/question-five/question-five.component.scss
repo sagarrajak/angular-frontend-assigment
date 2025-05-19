@@ -1,0 +1,74 @@
+.task h3 {
+  // Default color (for safety)
+  color: grey;
+}
+
+// Width: 0px to 100px -> RED
+@media (max-width: 100px) {
+  .task h3 {
+    color: red;
+  }
+}
+
+// Width: 101px to 200px -> BLUE
+@media (min-width: 101px) and (max-width: 200px) {
+  .task h3 {
+    color: blue;
+  }
+}
+
+// Width: 201px to 300px -> GREEN
+@media (min-width: 201px) and (max-width: 300px) {
+  .task h3 {
+    color: green;
+  }
+}
+
+// Width: 301px to 400px -> YELLOW
+@media (min-width: 301px) and (max-width: 400px) {
+  .task h3 {
+    color: yellow;
+  }
+}
+
+// Width: 401px to 500px -> ORANGE
+@media (min-width: 401px) and (max-width: 500px) {
+  .task h3 {
+    color: orange;
+  }
+}
+
+// Width: 501px to 600px -> PURPLE
+@media (min-width: 501px) and (max-width: 600px) {
+  .task h3 {
+    color: purple;
+  }
+}
+
+// Width: 601px to 700px -> RED
+@media (min-width: 601px) and (max-width: 700px) {
+  .task h3 {
+    color: red;
+  }
+}
+
+// Width: 701px to 800px -> BLUE
+@media (min-width: 701px) and (max-width: 800px) {
+  .task h3 {
+    color: blue;
+  }
+}
+
+// Width: 801px to 900px -> ORANGE
+@media (min-width: 801px) and (max-width: 900px) {
+  .task h3 {
+    color: orange;
+  }
+}
+
+// Width: 901px and above -> GREY
+@media (min-width: 901px) {
+  .task h3 {
+    color: grey;
+  }
+}

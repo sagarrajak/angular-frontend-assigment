@@ -1,0 +1,78 @@
+.part1 {
+    p:nth-of-type(1) {
+      color: red;
+    }
+  
+    span:nth-of-type(1) {
+      color: blue;
+    }
+  
+    p:nth-of-type(2) {
+      color: green;
+    }
+  
+    span:nth-of-type(2) {
+      color: blue;
+    }
+  
+    p:nth-of-type(3) {
+      color: yellow;
+    }
+  }
+  
+  .part2 {
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(4),
+    li:nth-child(5),
+    li:nth-child(7),
+    li:nth-child(8),
+    li:nth-child(10) {
+      color: red;
+    }
+  
+    li:nth-child(3),
+    li:nth-child(6),
+    li:nth-child(9) {
+      color: green;
+    }
+  }
+  
+  .part3 {
+    /* Default: All direct child divs are blue */
+    > div {
+      color: blue;
+    }
+  
+    /* Exception: Make div red if it comes immediately after a poisoned span */
+    > span.iAffectMyNextdiv + div {
+      color: red;
+    }
+  }
+  
+  .part4 {
+    div:nth-of-type(1) > a {
+      color: red;
+    }
+  
+    div:nth-of-type(2) > a {
+      color: yellow;
+    }
+  
+    ul li:nth-of-type(1) > a {
+      color: yellow;
+    }
+      ul li:nth-of-type(2) > a {
+      color: green;
+    }
+      ul li:nth-of-type(3) > a {
+      color: red;
+    }
+      p > a {
+      color: yellow;
+    }
+      > a {
+      color: red;
+    }
+  }
+  

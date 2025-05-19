@@ -1,10 +1,43 @@
 #main {
-    width: 300px;
-    height: 300px;
-    background-color:red;
-    position: absolute;
-    color: white;
-
-    //overide here 
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  position: relative; 
+  color: white;
 }
 
+#main div:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  color: black;
+  padding: 5px;
+}
+
+#main div:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+}
+
+#main div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: black;
+  padding: 5px;
+}
+
+#main div:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  color: black;
+  padding: 5px;
+}
