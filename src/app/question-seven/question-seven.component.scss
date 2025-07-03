@@ -13,3 +13,49 @@
 #lastselector {
     // for fourth problem 
 }
+
+a[href*=".com"] {
+  color: red !important;
+}
+
+#colorchilderen > div > div > div {
+  color: red;
+}
+#colorchilderen > div > div + div > div > div{
+  color: yellow;
+}
+
+#colorchilderen > div + div {
+  color: green;
+}
+
+#bluecolor > ul > li:nth-child(2) {
+  color: blue;
+}
+#bluecolor > ul > li  li:nth-child(2) {
+    color: blue;
+  }
+
+#evenodd li:nth-child(even) {
+  color: red;
+}
+#evenodd li:nth-child(odd) {
+  color: green;
+}
+
+#lastselector ul > li:last-child {
+  color: red;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: red !important;
+}
+a:active {
+  color: blue !important;
+}
