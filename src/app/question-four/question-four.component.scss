@@ -1,3 +1,83 @@
-.t{
-  background: red;
+.t1 {
+  display: none;
 }
+
+.t2 {
+  visibility: hidden;
+}
+
+.t3 {
+  opacity: 0;
+}
+
+.t4 {
+  height: 0;
+  overflow: hidden;
+}
+
+.t5 {
+  width: 0;
+  overflow: hidden;
+}
+
+.t6 {
+  position: absolute;
+  left: -9999px;
+}
+
+.t7 {
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.t8 {
+  pointer-events: none;
+  color: transparent;
+}
+
+.t9 {
+  transform: scale(0);
+}
+
+.t10 {
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+}
+
+.t11 {
+  filter: blur(100px);
+  opacity: 0;
+}
+
+.t12 {
+  mask: none;
+  -webkit-mask: none;
+}
+
+.t13 {
+  font-size: 0;
+  color: transparent;
+}
+
+.t14 {
+  background: transparent;
+  border: none;
+  color: transparent;
+}
+
+.t15 {
+  animation: hideMe 0.1s forwards;
+}
+
+@keyframes hideMe {
+  to {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+
+

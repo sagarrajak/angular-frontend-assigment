@@ -1,0 +1,68 @@
+.part1 {
+  p:first-of-type {
+    color: #e74c3c;
+  }
+  span:first-of-type {
+    color: #819A91;
+  }
+  div > p {
+    color: #4CAF50;
+  }
+  div > span {
+    color: #819A91;
+  }
+  p:last-of-type {
+    color: #FFD600;
+  }
+}
+
+.part2 {
+  ol > li:nth-child(1),
+  ol > li:nth-child(2),
+  ol > li:nth-child(4),
+  ol > li:nth-child(5),
+  ol > li:nth-child(7),
+  ol > li:nth-child(8),
+  ol > li:nth-child(10) {
+    color: #e74c3c;
+  }
+  ol > li:nth-child(3),
+  ol > li:nth-child(6),
+  ol > li:nth-child(9) {
+    color: #4CAF50;
+  }
+}
+
+.part3 {
+  > div {
+    color: #819A91;
+  }
+  .iAffectMyNextdiv + div {
+    color: #e74c3c !important;
+    font-weight: bold;
+  }
+}
+
+.part4 {
+  > div:first-of-type a {
+    color: #e74c3c;
+  }
+  > div:nth-of-type(2) a {
+    color: #FFD600;
+  }
+  ul > li:first-child a {
+    color: #FFD600;
+  }
+  ul > li:nth-child(2) a {
+    color: #4CAF50;
+  }
+  ul > li:nth-child(3) a {
+    color: #e74c3c;
+  }
+  p > a {
+    color: #FFD600;
+  }
+  > a {
+    color: #e74c3c;
+  }
+}
