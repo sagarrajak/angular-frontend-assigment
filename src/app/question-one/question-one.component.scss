@@ -1,0 +1,126 @@
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+  }
+
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1.5px solid #ccc;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+
+
+    &:focus {
+      border-color: #6c63ff;
+    }
+  }
+
+
+  
+  input.ng-invalid.ng-touched,
+  input.ng-invalid.ng-dirty {
+    border: 2px solid red;
+  }
+
+
+ 
+  input.ng-valid.ng-touched,
+  input.ng-valid.ng-dirty {
+    border: 2px solid green;
+  }
+
+
+  input:not([formControlName]):focus,
+  input:not([formControlName]):not(:placeholder-shown) {
+    border: 2px solid green;
+  }
+
+
+  p {
+    color: red;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+  }
+
+
+  button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: #5548d8;
+    }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+}
+
+
+
+input.touched-green {
+  border: 2px solid green;
+}
+
+
+
+input.ng-invalid.ng-touched,
+input.ng-invalid.ng-dirty {
+  border: 2px solid red;
+}
+
+
+
+input.ng-valid.ng-touched,
+input.ng-valid.ng-dirty {
+  border: 2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+

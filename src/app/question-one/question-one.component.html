@@ -1,4 +1,3 @@
-<!-- work on angular form -->
 <h2>Simple form assigment</h2>
 <ol>
   <li> Style the form and make it more beautifull form.</li>
@@ -47,10 +46,12 @@
     </ng-container>
     <br>
     <label>Address2</label>
-    <input type="text"  placeholder="Adress2" name='address2' />
+    <input type="text"  placeholder="Adress2" name='address2' class="address"  [(ngModel)]="address2" #addr2="ngModel"
+       [ngClass]="{'touched-green': addr2.touched}"/>
     <br/>
     <label>Address3</label>
-    <input type="text"  placeholder="Adress3" name='address3'  />
+    <input type="text"  placeholder="Adress3" name='address3' class="address"  [(ngModel)]="address3" #addr3="ngModel"
+       [ngClass]="{'touched-green': addr3.touched}" />
     <br/>
     <button type="submit">submit</button>
 </form>
