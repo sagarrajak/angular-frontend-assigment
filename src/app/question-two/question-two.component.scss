@@ -1,0 +1,62 @@
+.part1 {
+  > p:first-of-type {
+    color: red;
+  }
+
+  > span {
+    color: blue;
+  }
+
+  > div {
+    > p {
+      color: green;
+    }
+
+    > span {
+      color: blue;
+    }
+  }
+
+  > p:last-of-type {
+    color: yellow;
+  }
+}
+
+
+.part2 {
+  ol {
+    li {
+      color: red;
+
+      &:nth-child(3n) {
+        color: green;
+      }
+    }
+  }
+}
+
+
+.part3 {
+  div {
+    color: blue;
+  }
+
+  .iAffectMyNextdiv + div {
+    color: red;
+  }
+}
+
+
+.part4 {
+  a[href]:not([target]) {
+    color: red;
+  }
+
+  a[href][target='_blank'] {
+    color: yellow;
+  }
+
+  a:not([href]) {
+    color: green;
+  }
+}

@@ -1,0 +1,55 @@
+
+.arrange1,
+.arrange2 {
+  width: 1000px;
+  height: 1000px;
+  background-color: blue;
+  position: relative;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0;
+}
+
+
+.arrange1 > div,
+.arrange2 > div {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-weight: bold;
+}
+
+
+.arrange1 > div:nth-child(1) { background-color: red; top: 0; left: 0; }
+.arrange1 > div:nth-child(2) { background-color: orange; top: 0; left: 450px; }
+.arrange1 > div:nth-child(3) { background-color: yellow; top: 0; right: 0; }
+
+.arrange1 + div > div:nth-child(1) { background-color: green; top: 450px; left: 0; position: absolute; }
+.arrange1 + div > div:nth-child(2) { background-color: cyan; top: 450px; left: 450px; position: absolute; }
+.arrange1 + div > div:nth-child(3) { background-color: purple; top: 450px; right: 0; position: absolute; }
+
+.arrange1 + div + div > div:nth-child(1) { background-color: pink; bottom: 0; left: 0; position: absolute; }
+.arrange1 + div + div > div:nth-child(2) { background-color: lime; bottom: 0; left: 450px; position: absolute; }
+.arrange1 + div + div > div:nth-child(3) { background-color: teal; bottom: 0; right: 0; position: absolute; }
+
+
+.arrange2 > div:nth-child(1) { background-color: red; top: 0; left: 0; }
+.arrange2 > div:nth-child(2) { background-color: orange; top: 0; left: 450px; }
+.arrange2 > div:nth-child(3) { background-color: yellow; top: 0; right: 0; }
+
+.arrange2 > div:nth-child(4) { background-color: green; top: 450px; left: 0; }
+.arrange2 > div:nth-child(5) { background-color: cyan; top: 450px; left: 450px; }
+.arrange2 > div:nth-child(6) { background-color: purple; top: 450px; right: 0; }
+
+.arrange2 > div:nth-child(7) { background-color: pink; bottom: 0; left: 0; }
+.arrange2 > div:nth-child(8) { background-color: lime; bottom: 0; left: 450px; }
+.arrange2 > div:nth-child(9) { background-color: teal; bottom: 0; right: 0; }
